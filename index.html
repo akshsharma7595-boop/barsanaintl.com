@@ -1,1652 +1,1560 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>barsanaintl.com | Barsana International LLC — Importers & Global Commodity Traders</title>
-  <meta name="description" content="Barsana International LLC — Importers, Maritime Logistics & Global Traders in Technical Grade Urea, Sulphur, Gypsum, Fertilizers, Base Metals, Precious Metals, Steel & Heavy Equipment.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Barsana International LLC — Importers, Maritime Logistics & Global Traders | UAE</title>
+  <meta name="description" content="Barsana International LLC, headquartered in Sharjah Media City, UAE, is an international commodity trading and maritime logistics house specializing in industrial chemicals, fertilizers, steel, non-ferrous metals, bullion, and heavy engineering." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg-light: #eaf1f8;
-      --bg-white: #f7fafe;
-      --bg-dark: #07152b;
-      --bg-dark-card: #0c2142;
-      --accent-indigo: #0284c7;
-      --accent-navy: #152342;
-      --accent-periwinkle: #38bdf8;
-      --accent-soft: #d8ecff;
-      --text-dark: #10203b;
-      --text-muted: #415675;
-      --text-faded: #b8c7d9;
-      --border-light: rgba(21, 35, 66, 0.12);
-      --border-dark: rgba(255, 255, 255, 0.14);
+      --navy-950: #071120;
+      --navy-900: #0c1b33;
+      --navy-800: #15294a;
+      --navy-700: #1e3a66;
+      --azure-600: #0284c7;
+      --azure-500: #0ea5e9;
+      --azure-100: #e0f2fe;
+      --sand-50: #f8fafc;
+      --sand-100: #f1f5f9;
+      --sand-200: #e2e8f0;
+      --gold-500: #c5a059;
+      --text-main: #0f172a;
+      --text-body: #334155;
+      --text-muted: #64748b;
+      --white: #ffffff;
+      --serif: 'Cormorant Garamond', Georgia, serif;
+      --sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      --mono: 'JetBrains Mono', monospace;
     }
 
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
+    }
+
+    html {
       scroll-behavior: smooth;
     }
 
     body {
-      background-color: var(--bg-light);
-      color: var(--text-dark);
-      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-      overflow-x: hidden;
+      font-family: var(--sans);
+      color: var(--text-main);
+      background-color: var(--sand-50);
+      line-height: 1.65;
       -webkit-font-smoothing: antialiased;
     }
 
-    .container {
-      max-width: 1220px;
-      margin: 0 auto;
-      padding: 0 32px;
-    }
-
-    /* ==========================================================================
-       1. HERO SECTION: CLEAN & NEAT BARSANA MARITIME NAVY & OCEAN BLUE MESH
-       ========================================================================== */
-    .hero-section {
-      background:
-        radial-gradient(circle at 16% 24%, rgba(21, 35, 66, 0.13) 0%, transparent 46%),
-        radial-gradient(circle at 84% 20%, rgba(2, 132, 199, 0.16) 0%, transparent 46%),
-        radial-gradient(circle at 50% 82%, rgba(56, 189, 248, 0.14) 0%, transparent 52%),
-        linear-gradient(180deg, #dfeaf6 0%, #eef5fc 52%, #e1edf9 100%);
-      position: relative;
-      overflow: hidden;
-      padding-top: 24px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-
-    .nav-bar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      height: 76px;
-      position: relative;
-      z-index: 10;
-    }
-
-    .brand-name {
-      display: inline-flex;
-      align-items: center;
-      font-weight: 800;
-      font-size: 16.5px;
-      letter-spacing: -0.3px;
-      color: var(--accent-navy);
-      text-decoration: none;
-    }
-
-    .nav-right-links {
-      display: flex;
-      gap: 24px;
-      align-items: center;
-    }
-
-    .nav-right-links a {
-      text-decoration: none;
-      color: var(--text-dark);
-      font-size: 13px;
-      font-weight: 600;
-      transition: opacity 0.2s;
-    }
-
-    .nav-right-links a:hover {
-      opacity: 0.6;
-    }
-
-    .nav-social-group {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      margin-left: 6px;
-      padding-left: 16px;
-      border-left: 1px solid rgba(21, 35, 66, 0.18);
-    }
-
-    .nav-social-icon {
-      width: 34px;
-      height: 34px;
-      border-radius: 50%;
-      background: rgba(255, 255, 255, 0.78);
-      border: 1px solid rgba(21, 35, 66, 0.2);
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--accent-navy);
-      transition: all 0.25s ease;
-    }
-
-    .nav-social-icon:hover {
-      background: linear-gradient(135deg, #152342 0%, #0284c7 100%);
-      color: #ffffff !important;
-      border-color: transparent;
-      opacity: 1 !important;
-      transform: translateY(-2px);
-      box-shadow: 0 6px 16px rgba(2, 132, 199, 0.28);
-    }
-
-    /* Center Hero Content — Official Barsana Seal + Refined Institutional Spacing */
-    .hero-center {
-      text-align: center;
-      padding: 44px 0 12px;
-      position: relative;
-      z-index: 5;
-      max-width: 900px;
-      margin: 0 auto;
-    }
-
-    .hero-eyebrow {
-      display: block;
-      font-size: 11.5px;
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: 0.22em;
-      color: #0369a1;
-      margin-bottom: 18px;
-    }
-
-    .hero-main-logo {
-      height: 136px;
-      width: 136px;
-      object-fit: contain;
-      display: inline-block;
-      margin: 0 auto 24px;
-      border-radius: 50%;
-      filter: drop-shadow(0 14px 32px rgba(21, 35, 66, 0.18));
-    }
-
-    .hero-subheadline {
-      font-size: clamp(16px, 1.8vw, 19.5px);
-      font-weight: 500;
-      line-height: 1.65;
-      letter-spacing: 0.01em;
-      color: #2c425e;
-      max-width: 680px;
-      margin: 0 auto 34px;
-    }
-
-    .btn-dark-pill {
-      background: linear-gradient(135deg, #152342 0%, #1d3b6e 52%, #0284c7 100%);
-      color: #ffffff;
-      font-size: 13px;
-      font-weight: 700;
-      padding: 14px 34px;
-      border-radius: 12px;
-      border: none;
-      cursor: pointer;
-      transition: all 0.25s ease;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      box-shadow: 0 12px 28px rgba(21, 35, 66, 0.22);
-    }
-
-    .btn-dark-pill:hover {
-      transform: translateY(-2px);
-      background: linear-gradient(135deg, #0284c7 0%, #152342 100%);
-      box-shadow: 0 16px 32px rgba(2, 132, 199, 0.28);
-    }
-
-    /* Two Tilted Dark Interactive Commodity Screens in Hero Bottom */
-    .hero-devices-stage {
-      display: flex;
-      justify-content: center;
-      align-items: flex-end;
-      gap: 28px;
-      margin-top: 52px;
-      height: 360px;
-      position: relative;
-      z-index: 4;
-      perspective: 1200px;
-    }
-
-    .hero-device {
-      width: 315px;
-      height: 390px;
-      background: linear-gradient(160deg, #07152b 0%, #152342 65%, #0c3559 100%);
-      border-radius: 34px 34px 0 0;
-      border: 6px solid #1e335c;
-      border-bottom: none;
-      padding: 24px 20px;
-      color: var(--bg-white);
-      box-shadow: 0 30px 70px rgba(7, 21, 43, 0.32);
-      transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-      text-align: left;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-
-    .device-left {
-      transform: translateY(25px) rotate(-6deg);
-      z-index: 2;
-    }
-
-    .device-right {
-      transform: translateY(10px) rotate(5deg) translateX(-18px);
-      z-index: 3;
-    }
-
-    .hero-devices-stage:hover .device-left {
-      transform: translateY(10px) rotate(-8deg) translateX(-8px);
-    }
-
-    .hero-devices-stage:hover .device-right {
-      transform: translateY(0px) rotate(7deg) translateX(-10px);
-    }
-
-    .dev-top-bar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-size: 11px;
-      color: #94a3b8;
-      margin-bottom: 14px;
-    }
-
-    .dev-pill-tag {
-      background: rgba(56, 189, 248, 0.2);
-      color: #7dd3fc;
-      padding: 3px 10px;
-      border-radius: 20px;
-      font-size: 10px;
-      font-weight: 700;
-    }
-
-    .dev-asset-row {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 11px 0;
+    /* Top Institutional Strip */
+    .top-bar {
+      background: var(--navy-950);
+      color: rgba(255, 255, 255, 0.78);
+      font-size: 0.78rem;
       border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 0.55rem 0;
     }
-
-    .dev-asset-left {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .dev-dot {
-      width: 26px;
-      height: 26px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 10.5px;
-      font-weight: 800;
-    }
-
-    /* Maritime Navy & Sky Marquee Ribbon Bar */
-    .marquee-ribbon {
-      background: linear-gradient(90deg, #dbeafe 0%, #e0f2fe 50%, #dbeafe 100%);
-      border-top: 1px solid rgba(2, 132, 199, 0.28);
-      border-bottom: 1px solid rgba(2, 132, 199, 0.28);
-      padding: 12px 0;
-      overflow: hidden;
-      white-space: nowrap;
-      position: relative;
-      z-index: 8;
-    }
-
-    .marquee-track {
-      display: inline-flex;
-      gap: 36px;
-      animation: scrollMarquee 24s linear infinite;
-      font-size: 11px;
-      font-weight: 800;
-      letter-spacing: 1.4px;
-      text-transform: uppercase;
-      color: var(--accent-navy);
-    }
-
-    @keyframes scrollMarquee {
-      from { transform: translateX(0); }
-      to { transform: translateX(-50%); }
-    }
-
-    /* ==========================================================================
-       2. DARK ORBITING PILLS SECTION (MARITIME NAVY DEPTH-OF-FIELD)
-       ========================================================================== */
-    .orbit-dark-section {
-      background:
-        radial-gradient(circle at 20% 30%, rgba(2, 132, 199, 0.24) 0%, transparent 48%),
-        radial-gradient(circle at 80% 70%, rgba(21, 35, 66, 0.45) 0%, transparent 50%),
-        linear-gradient(145deg, #050f21 0%, #152342 55%, #092542 100%);
-      color: var(--bg-white);
-      padding: 160px 0;
-      position: relative;
-      overflow: hidden;
-      text-align: center;
-    }
-
-    .orbit-headline {
-      font-family: 'Plus Jakarta Sans', sans-serif;
-      font-size: clamp(28px, 4.2vw, 52px);
-      font-weight: 700;
-      line-height: 1.22;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      max-width: 880px;
+    .container {
+      max-width: 1280px;
       margin: 0 auto;
-      position: relative;
-      z-index: 4;
+      padding: 0 2rem;
     }
-
-    .orbit-pill {
-      position: absolute;
-      background: rgba(255, 255, 255, 0.07);
-      border: 1px solid rgba(255, 255, 255, 0.15);
-      padding: 10px 20px;
-      border-radius: 40px;
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      font-size: 12px;
-      font-weight: 700;
-      letter-spacing: 0.8px;
-      text-transform: uppercase;
-      color: var(--bg-white);
-      backdrop-filter: blur(8px);
-      transition: transform 0.2s ease-out, filter 0.3s;
-      cursor: pointer;
-    }
-
-    .orbit-pill:hover {
-      filter: blur(0px) !important;
-      opacity: 1 !important;
-      border-color: var(--accent-periwinkle);
-      transform: scale(1.08) !important;
-      z-index: 6;
-    }
-
-    .pill-icon-circle {
-      width: 24px;
-      height: 24px;
-      border-radius: 50%;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 12px;
-      font-weight: 800;
-    }
-
-    .op-1 { top: 16%; left: 16%; z-index: 5; }
-    .op-2 { top: 20%; right: 14%; z-index: 5; }
-    .op-3 { bottom: 16%; left: 14%; z-index: 5; }
-    .op-4 { bottom: 14%; right: 20%; z-index: 5; }
-    .op-5 { top: 48%; left: 5%; filter: blur(2.5px); opacity: 0.55; transform: scale(0.88); }
-    .op-6 { top: 30%; left: 54%; filter: blur(2px); opacity: 0.6; transform: scale(0.85); }
-    .op-7 { bottom: 32%; right: 5%; filter: blur(3px); opacity: 0.5; transform: scale(0.85); }
-
-    /* ==========================================================================
-       3. STICKY SCROLL-DOWN ISOMETRIC GRAPHICS SECTION
-       ========================================================================== */
-    .sticky-isometric-section {
-      background:
-        radial-gradient(circle at 12% 35%, rgba(2, 132, 199, 0.12) 0%, transparent 50%),
-        linear-gradient(180deg, #e3edf8 0%, #eef5fc 100%);
-      padding: 120px 0;
-      position: relative;
-    }
-
-    .sticky-iso-grid {
-      display: grid;
-      grid-template-columns: 1fr 1.1fr;
-      gap: 80px;
-      align-items: start;
-    }
-
-    .iso-sticky-box {
-      position: sticky;
-      top: 120px;
-      background: linear-gradient(145deg, #ffffff 0%, #edf4fc 100%);
-      border-radius: 28px;
-      height: 470px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 24px 60px rgba(21, 35, 66, 0.08);
-      border: 1px solid rgba(2, 132, 199, 0.22);
-      overflow: hidden;
-    }
-
-    .iso-graphic-layer {
-      position: absolute;
-      width: 320px;
-      height: 320px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      opacity: 0;
-      transform: scale(0.82) translateY(30px);
-      transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-      pointer-events: none;
-    }
-
-    .iso-graphic-layer.active {
-      opacity: 1;
-      transform: scale(1) translateY(0);
-    }
-
-    .spin-slow {
-      transform-origin: center;
-      animation: rotateIso 14s linear infinite;
-    }
-
-    .tilt-balance {
-      transform-origin: 150px 130px;
-      animation: balanceSwing 4s ease-in-out infinite alternate;
-    }
-
-    .pulse-shield {
-      transform-origin: center;
-      animation: shieldFloat 3.5s ease-in-out infinite alternate;
-    }
-
-    @keyframes rotateIso {
-      from { transform: rotate(0deg); }
-      to { transform: rotate(360deg); }
-    }
-
-    @keyframes balanceSwing {
-      0% { transform: rotate(-6deg); }
-      100% { transform: rotate(6deg); }
-    }
-
-    @keyframes shieldFloat {
-      0% { transform: translateY(0px); }
-      100% { transform: translateY(-10px); }
-    }
-
-    .iso-scroll-steps {
-      display: flex;
-      flex-direction: column;
-      gap: 140px;
-      padding: 40px 0 80px;
-    }
-
-    .iso-step-block {
-      opacity: 0.22;
-      transition: opacity 0.45s ease, transform 0.45s ease;
-      cursor: pointer;
-    }
-
-    .iso-step-block.active {
-      opacity: 1;
-    }
-
-    .iso-step-header {
+    .top-bar-inner {
       display: flex;
       justify-content: space-between;
-      align-items: baseline;
-      border-bottom: 1.5px solid var(--text-dark);
-      padding-bottom: 14px;
-      margin-bottom: 20px;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
     }
-
-    .iso-big-stat {
-      font-family: 'Plus Jakarta Sans', sans-serif;
-      font-size: clamp(44px, 5.2vw, 68px);
-      font-weight: 700;
-      line-height: 1.05;
-      color: var(--text-dark);
+    .top-meta {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    .top-meta span {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      font-family: var(--mono);
+      font-size: 0.74rem;
       letter-spacing: 0.02em;
     }
-
-    .iso-stat-tag {
-      font-size: 11px;
-      font-weight: 800;
-      letter-spacing: 1.2px;
-      text-transform: uppercase;
-      color: var(--text-muted);
-    }
-
-    .iso-step-desc {
-      font-size: 16px;
-      line-height: 1.7;
-      color: var(--text-muted);
-      max-width: 480px;
-    }
-
-    /* ==========================================================================
-       4. STICKY DEVICE SHOWCASE + SCROLLING COMMODITY NARRATIVES
-       ========================================================================== */
-    .device-scroll-section {
-      background:
-        radial-gradient(circle at 85% 40%, rgba(21, 35, 66, 0.1) 0%, transparent 50%),
-        linear-gradient(180deg, #eef5fc 0%, #e1ecf8 100%);
-      padding: 130px 0;
-      position: relative;
-      border-top: 1px solid var(--border-light);
-    }
-
-    .device-showcase-grid {
-      display: grid;
-      grid-template-columns: 40px 1fr 1.1fr;
-      gap: 48px;
-      align-items: start;
-    }
-
-    .scroll-progress-rail {
-      position: sticky;
-      top: 260px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 12px;
-    }
-
-    .rail-dot {
-      width: 5px;
-      height: 5px;
+    .top-meta .dot {
+      width: 6px;
+      height: 6px;
       border-radius: 50%;
-      background: #ccc;
-      transition: all 0.35s ease;
+      background: #38bdf8;
+      display: inline-block;
+    }
+    .top-links {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+    }
+    .top-links a {
+      color: rgba(255, 255, 255, 0.85);
+      text-decoration: none;
+      transition: color 0.2s;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+    .top-links a:hover {
+      color: #38bdf8;
     }
 
-    .rail-dot.active {
-      height: 24px;
-      border-radius: 4px;
-      background: var(--text-dark);
-    }
-
-    .sticky-phone-wrap {
+    /* Main Header */
+    .site-header {
       position: sticky;
-      top: 110px;
-      display: flex;
-      justify-content: center;
+      top: 0;
+      z-index: 100;
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--sand-200);
+      box-shadow: 0 4px 20px -10px rgba(12, 27, 51, 0.08);
     }
-
-    .phone-frame {
-      width: 335px;
-      height: 540px;
-      background: linear-gradient(165deg, #07152b 0%, #152342 60%, #0b2e4f 100%);
-      border-radius: 42px;
-      border: 8px solid #1e335c;
-      box-shadow: 0 35px 80px rgba(21, 35, 66, 0.24);
-      padding: 28px 22px;
-      color: var(--bg-white);
-      position: relative;
-      overflow: hidden;
+    .header-inner {
       display: flex;
-      flex-direction: column;
-    }
-
-    .phone-screen-slide {
-      position: absolute;
-      inset: 28px 22px;
-      opacity: 0;
-      transform: translateY(35px);
-      transition: all 0.55s cubic-bezier(0.16, 1, 0.3, 1);
-      display: flex;
-      flex-direction: column;
       justify-content: space-between;
+      align-items: center;
+      height: 88px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      text-decoration: none;
+      color: var(--navy-900);
+    }
+    .brand img {
+      height: 64px;
+      width: 64px;
+      object-fit: contain;
+      border-radius: 50%;
+      box-shadow: 0 2px 10px rgba(12, 27, 51, 0.12);
+    }
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+    }
+    .brand-title {
+      font-family: var(--serif);
+      font-size: 1.55rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      color: var(--navy-900);
+      line-height: 1.1;
+    }
+    .brand-subtitle {
+      font-family: var(--mono);
+      font-size: 0.68rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--azure-600);
+      margin-top: 0.2rem;
+      font-weight: 600;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 2.2rem;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: var(--text-body);
+      font-size: 0.92rem;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover {
+      color: var(--azure-600);
+    }
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+    }
+    .social-icon {
+      width: 38px;
+      height: 38px;
+      border-radius: 8px;
+      border: 1px solid var(--sand-200);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--navy-800);
+      text-decoration: none;
+      transition: all 0.2s;
+      background: var(--white);
+    }
+    .social-icon:hover {
+      border-color: var(--azure-600);
+      color: var(--azure-600);
+      transform: translateY(-1px);
+    }
+    .btn-primary {
+      background: var(--navy-900);
+      color: var(--white);
+      padding: 0.72rem 1.4rem;
+      border-radius: 6px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.2s;
+      border: 1px solid var(--navy-900);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .btn-primary:hover {
+      background: var(--azure-600);
+      border-color: var(--azure-600);
+    }
+    .btn-outline {
+      background: transparent;
+      color: var(--navy-900);
+      padding: 0.72rem 1.4rem;
+      border-radius: 6px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      text-decoration: none;
+      border: 1px solid var(--navy-800);
+      transition: all 0.2s;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .btn-outline:hover {
+      background: var(--navy-900);
+      color: var(--white);
+    }
+
+    /* Hero Section - Architectural Maritime Trade Layout */
+    .hero {
+      position: relative;
+      background: linear-gradient(135deg, #071326 0%, #0d2242 55%, #13335c 100%);
+      color: var(--white);
+      padding: 5.5rem 0 6rem;
+      overflow: hidden;
+      border-bottom: 4px solid var(--azure-600);
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: 
+        radial-gradient(circle at 82% 22%, rgba(14, 165, 233, 0.18) 0%, transparent 45%),
+        linear-gradient(to right, rgba(255,255,255,0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255,255,255,0.03) 1px, transparent 1px);
+      background-size: 100% 100%, 48px 48px, 48px 48px;
       pointer-events: none;
     }
-
-    .phone-screen-slide.active {
-      opacity: 1;
-      transform: translateY(0);
-      pointer-events: auto;
+    .hero-grid {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 4rem;
+      align-items: center;
     }
-
-    .device-narrative-steps {
-      display: flex;
-      flex-direction: column;
-      gap: 220px;
-      padding: 90px 0 120px;
-    }
-
-    .narrative-block {
-      opacity: 0.25;
-      transition: opacity 0.45s ease;
-    }
-
-    .narrative-block.active {
-      opacity: 1;
-    }
-
-    .narrative-tag {
-      font-size: 11px;
-      font-weight: 800;
-      letter-spacing: 1.5px;
+    .hero-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 0.38rem 0.9rem;
+      background: rgba(14, 165, 233, 0.14);
+      border: 1px solid rgba(56, 189, 248, 0.35);
+      border-radius: 4px;
+      font-family: var(--mono);
+      font-size: 0.75rem;
       text-transform: uppercase;
-      color: var(--accent-indigo);
-      margin-bottom: 12px;
+      letter-spacing: 0.12em;
+      color: #7dd3fc;
+      margin-bottom: 1.5rem;
+    }
+    .hero h1 {
+      font-family: var(--serif);
+      font-size: clamp(2.6rem, 4.4vw, 4rem);
+      font-weight: 600;
+      line-height: 1.12;
+      margin-bottom: 1.4rem;
+      color: var(--white);
+    }
+    .hero h1 span {
+      color: #7dd3fc;
+      font-style: italic;
+    }
+    .hero-lead {
+      font-size: 1.08rem;
+      color: rgba(255, 255, 255, 0.82);
+      max-width: 620px;
+      margin-bottom: 2.2rem;
+      line-height: 1.75;
+    }
+    .hero-cta-group {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-bottom: 3rem;
+    }
+    .btn-hero-primary {
+      background: var(--azure-500);
+      color: var(--navy-950);
+      padding: 0.9rem 1.75rem;
+      border-radius: 6px;
+      font-weight: 700;
+      font-size: 0.92rem;
+      text-decoration: none;
+      transition: all 0.2s;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .btn-hero-primary:hover {
+      background: #38bdf8;
+      transform: translateY(-1px);
+    }
+    .btn-hero-secondary {
+      background: rgba(255, 255, 255, 0.07);
+      color: var(--white);
+      padding: 0.9rem 1.75rem;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 0.92rem;
+      text-decoration: none;
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      transition: all 0.2s;
+    }
+    .btn-hero-secondary:hover {
+      background: rgba(255, 255, 255, 0.14);
+    }
+
+    .hero-metrics {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.14);
+    }
+    .metric-item strong {
+      display: block;
+      font-family: var(--serif);
+      font-size: 2rem;
+      font-weight: 700;
+      color: #7dd3fc;
+      line-height: 1.1;
+    }
+    .metric-item span {
+      font-size: 0.82rem;
+      color: rgba(255, 255, 255, 0.7);
+      margin-top: 0.25rem;
       display: block;
     }
 
-    .narrative-title {
-      font-size: clamp(28px, 3.4vw, 40px);
-      font-weight: 800;
-      line-height: 1.15;
-      letter-spacing: -0.03em;
-      color: var(--text-dark);
-      margin-bottom: 18px;
-      max-width: 460px;
+    /* Right Hero Card: Executive Trade Desk & Seal */
+    .trade-desk-card {
+      background: rgba(12, 27, 51, 0.85);
+      border: 1px solid rgba(125, 211, 252, 0.25);
+      border-radius: 12px;
+      padding: 2.2rem;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.45);
+      backdrop-filter: blur(12px);
     }
-
-    .narrative-desc {
-      font-size: 15.5px;
-      line-height: 1.7;
-      color: var(--text-muted);
-      margin-bottom: 26px;
-      max-width: 460px;
-    }
-
-    .narrative-float-card {
-      background: var(--bg-white);
-      border: 1px solid var(--border-light);
-      box-shadow: 0 16px 40px rgba(21, 35, 66, 0.06);
-      border-radius: 16px;
-      padding: 16px 20px;
-      display: inline-flex;
-      align-items: center;
-      gap: 16px;
-      min-width: 290px;
-    }
-
-    /* ==========================================================================
-       5. INTERACTIVE ACCORDION PRODUCTS & COMMODITIES SECTION
-       ========================================================================== */
-    .accordion-section {
-      background: linear-gradient(180deg, #e1ecf8 0%, #ebf3fc 100%);
-      padding: 110px 0;
-      border-top: 1px solid var(--border-light);
-    }
-
-    .accordion-grid {
-      display: grid;
-      grid-template-columns: 0.85fr 1.15fr;
-      gap: 60px;
-      align-items: start;
-    }
-
-    .acc-list {
+    .desk-header {
       display: flex;
-      flex-direction: column;
-      gap: 10px;
+      align-items: center;
+      gap: 1.2rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      margin-bottom: 1.5rem;
     }
-
-    .acc-item {
-      background: transparent;
-      border-bottom: 1px solid rgba(21, 35, 66, 0.1);
-      border-radius: 14px;
-      padding: 20px 24px;
-      cursor: pointer;
-      transition: background-color 0.25s ease;
+    .desk-header img {
+      width: 78px;
+      height: 78px;
+      border-radius: 50%;
+      background: var(--white);
+      padding: 3px;
+      object-fit: contain;
     }
-
-    .acc-item:hover, .acc-item.open {
-      background: rgba(255, 255, 255, 0.82);
-      border-bottom-color: transparent;
-      box-shadow: 0 8px 24px rgba(21, 35, 66, 0.07);
+    .desk-header-text h3 {
+      font-family: var(--serif);
+      font-size: 1.45rem;
+      color: var(--white);
+      font-weight: 600;
     }
-
-    .acc-header {
+    .desk-header-text p {
+      font-family: var(--mono);
+      font-size: 0.74rem;
+      color: #7dd3fc;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-top: 0.2rem;
+    }
+    .desk-corridors {
+      display: grid;
+      gap: 0.85rem;
+      margin-bottom: 1.5rem;
+    }
+    .corridor-row {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      font-size: 16px;
-      font-weight: 700;
-      color: var(--text-dark);
+      padding: 0.75rem 1rem;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 6px;
+      font-size: 0.85rem;
     }
-
-    .acc-chevron {
-      font-size: 14px;
-      color: var(--text-muted);
-      transition: transform 0.3s ease;
+    .corridor-row .label {
+      color: rgba(255, 255, 255, 0.68);
+      font-weight: 500;
     }
-
-    .acc-item.open .acc-chevron {
-      transform: rotate(180deg);
+    .corridor-row .val {
+      color: var(--white);
+      font-family: var(--mono);
+      font-size: 0.78rem;
+      font-weight: 600;
     }
-
-    .acc-body {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.35s ease, margin-top 0.3s ease;
-      font-size: 14.5px;
-      color: var(--text-muted);
-      line-height: 1.65;
-    }
-
-    .acc-item.open .acc-body {
-      max-height: 220px;
-      margin-top: 12px;
-    }
-
-    /* ==========================================================================
-       6. DARK FOOTER WITH GRADIENT HOVER PILL BUTTONS & COMPACT ADDRESS
-       ========================================================================== */
-    .dark-footer {
-      background:
-        radial-gradient(circle at 50% 0%, rgba(2, 132, 199, 0.2) 0%, transparent 55%),
-        linear-gradient(160deg, #050f21 0%, #152342 60%, #071e38 100%);
-      color: var(--bg-white);
-      padding: 90px 0 45px;
-      text-align: center;
-    }
-
-    .footer-contact-tag {
-      font-size: 11px;
-      font-weight: 800;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: #94a3b8;
-      margin-bottom: 12px;
-    }
-
-    .footer-giant-email {
-      font-size: clamp(26px, 4.2vw, 48px);
-      font-weight: 800;
-      color: var(--bg-white);
-      text-decoration: none;
-      letter-spacing: -0.03em;
-      display: inline-block;
-      margin-bottom: 36px;
-      transition: color 0.2s;
-    }
-
-    .footer-giant-email:hover {
-      color: var(--accent-periwinkle);
-    }
-
-    .footer-offices-compact {
+    .desk-footer {
       display: flex;
-      justify-content: center;
-      gap: 60px;
-      flex-wrap: wrap;
-      margin-bottom: 48px;
-      padding: 24px 0;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.8rem;
+      color: rgba(255, 255, 255, 0.75);
+      padding-top: 1rem;
       border-top: 1px solid rgba(255, 255, 255, 0.1);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-      text-align: left;
+    }
+    .desk-footer a {
+      color: #7dd3fc;
+      text-decoration: none;
+      font-family: var(--mono);
+      font-weight: 600;
     }
 
-    .office-mini-col {
-      max-width: 360px;
+    /* Section Styling */
+    section {
+      padding: 5.5rem 0;
     }
-
-    .office-mini-label {
-      font-size: 11px;
-      font-weight: 800;
+    .section-header {
+      max-width: 760px;
+      margin-bottom: 3.5rem;
+    }
+    .section-kicker {
+      font-family: var(--mono);
+      font-size: 0.76rem;
       text-transform: uppercase;
-      letter-spacing: 1.2px;
-      color: var(--accent-periwinkle);
-      margin-bottom: 6px;
+      letter-spacing: 0.15em;
+      color: var(--azure-600);
+      font-weight: 600;
+      display: block;
+      margin-bottom: 0.65rem;
+    }
+    .section-title {
+      font-family: var(--serif);
+      font-size: clamp(2rem, 3.2vw, 2.85rem);
+      color: var(--navy-900);
+      line-height: 1.18;
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+    .section-desc {
+      color: var(--text-body);
+      font-size: 1.02rem;
     }
 
-    .office-mini-text {
-      font-size: 13.5px;
-      color: #cbd5e1;
+    /* About / Institutional Mandate */
+    .about-section {
+      background: var(--white);
+      border-bottom: 1px solid var(--sand-200);
+    }
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: start;
+    }
+    .about-narrative p {
+      margin-bottom: 1.25rem;
+      color: var(--text-body);
+      font-size: 1.02rem;
+    }
+    .quote-box {
+      margin-top: 2rem;
+      padding: 1.6rem 1.8rem;
+      background: var(--sand-50);
+      border-left: 4px solid var(--azure-600);
+      border-radius: 0 8px 8px 0;
+    }
+    .quote-box p {
+      font-family: var(--serif);
+      font-size: 1.25rem;
+      font-style: italic;
+      color: var(--navy-900);
+      margin-bottom: 0.5rem;
+    }
+    .quote-box span {
+      font-family: var(--mono);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--text-muted);
+    }
+
+    .pillars-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+    }
+    .pillar-card {
+      background: var(--sand-50);
+      border: 1px solid var(--sand-200);
+      border-radius: 8px;
+      padding: 1.6rem;
+      transition: all 0.2s;
+    }
+    .pillar-card:hover {
+      border-color: var(--azure-600);
+      box-shadow: 0 10px 25px -10px rgba(2, 132, 199, 0.15);
+    }
+    .pillar-num {
+      font-family: var(--mono);
+      font-size: 0.75rem;
+      color: var(--azure-600);
+      font-weight: 700;
+      margin-bottom: 0.6rem;
+      display: block;
+    }
+    .pillar-card h4 {
+      font-family: var(--serif);
+      font-size: 1.3rem;
+      color: var(--navy-900);
+      margin-bottom: 0.5rem;
+    }
+    .pillar-card p {
+      font-size: 0.88rem;
+      color: var(--text-body);
       line-height: 1.6;
     }
 
-    .footer-pills-row {
+    /* Interactive Commodity Portfolio & Technical Catalog */
+    .catalog-section {
+      background: var(--sand-50);
+      border-bottom: 1px solid var(--sand-200);
+    }
+    .filter-tabs {
+      display: flex;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+      margin-bottom: 2.5rem;
+      border-bottom: 1px solid var(--sand-200);
+      padding-bottom: 1.2rem;
+    }
+    .tab-btn {
+      padding: 0.65rem 1.25rem;
+      border-radius: 6px;
+      border: 1px solid var(--sand-200);
+      background: var(--white);
+      color: var(--text-body);
+      font-family: var(--sans);
+      font-size: 0.88rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .tab-btn:hover {
+      border-color: var(--azure-600);
+      color: var(--azure-600);
+    }
+    .tab-btn.active {
+      background: var(--navy-900);
+      color: var(--white);
+      border-color: var(--navy-900);
+    }
+
+    .commodity-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 14px;
-      max-width: 840px;
-      margin: 0 auto 44px;
+      gap: 1.75rem;
     }
-
-    .footer-pill-btn {
-      background: transparent;
-      border: 1px solid rgba(255, 255, 255, 0.22);
-      color: var(--bg-white);
-      padding: 16px 20px;
-      border-radius: 50px;
-      font-size: 12px;
-      font-weight: 800;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      text-decoration: none;
+    .commodity-card {
+      background: var(--white);
+      border: 1px solid var(--sand-200);
+      border-radius: 10px;
+      padding: 2rem;
       display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      transition: all 0.3s ease;
-      cursor: pointer;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all 0.25s;
+      position: relative;
+      overflow: hidden;
     }
-
-    .footer-pill-btn:hover {
-      background: linear-gradient(135deg, #152342 0%, #0284c7 60%, #38bdf8 100%);
-      border-color: #7dd3fc;
-      transform: translateY(-3px);
-      box-shadow: 0 12px 28px rgba(2, 132, 199, 0.35);
-    }
-
-    /* Modal Form */
-    .modal-backdrop {
-      position: fixed;
+    .commodity-card::before {
+      content: "";
+      position: absolute;
       top: 0;
       left: 0;
-      width: 100vw;
-      height: 100vh;
-      background: rgba(7, 21, 43, 0.8);
-      backdrop-filter: blur(10px);
-      z-index: 300;
-      display: none;
-      align-items: center;
-      justify-content: center;
-      padding: 24px;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--navy-900), var(--azure-500));
     }
-
-    .modal-backdrop.active {
-      display: flex;
+    .commodity-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 35px -15px rgba(12, 27, 51, 0.12);
+      border-color: rgba(2, 132, 199, 0.4);
     }
-
-    .modal-card {
-      background: var(--bg-white);
-      border-radius: 24px;
-      max-width: 460px;
+    .commodity-cat {
+      font-family: var(--mono);
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--azure-600);
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      display: inline-block;
+    }
+    .commodity-card h3 {
+      font-family: var(--serif);
+      font-size: 1.5rem;
+      color: var(--navy-900);
+      margin-bottom: 0.75rem;
+      font-weight: 700;
+    }
+    .commodity-card p {
+      font-size: 0.9rem;
+      color: var(--text-body);
+      margin-bottom: 1.25rem;
+    }
+    .spec-table {
       width: 100%;
-      padding: 40px;
-      position: relative;
-      color: var(--text-dark);
-      box-shadow: 0 30px 80px rgba(0, 0, 0, 0.35);
+      border-collapse: collapse;
+      margin-bottom: 1.25rem;
+      font-size: 0.82rem;
+    }
+    .spec-table tr {
+      border-top: 1px solid var(--sand-100);
+    }
+    .spec-table td {
+      padding: 0.48rem 0;
+    }
+    .spec-table td:first-child {
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+    .spec-table td:last-child {
+      text-align: right;
+      font-family: var(--mono);
+      color: var(--navy-900);
+      font-weight: 600;
+      font-size: 0.78rem;
+    }
+    .card-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      padding-top: 0.8rem;
+      border-top: 1px solid var(--sand-200);
+    }
+    .tag {
+      font-family: var(--mono);
+      font-size: 0.7rem;
+      padding: 0.22rem 0.55rem;
+      background: var(--sand-100);
+      color: var(--navy-800);
+      border-radius: 4px;
     }
 
-    .modal-close {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      background: var(--bg-light);
+    /* Maritime Logistics & Chartering Architecture */
+    .logistics-section {
+      background: var(--navy-950);
+      color: var(--white);
+    }
+    .logistics-section .section-title {
+      color: var(--white);
+    }
+    .logistics-section .section-desc {
+      color: rgba(255, 255, 255, 0.75);
+    }
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+    .process-step {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      padding: 2rem 1.6rem;
+      position: relative;
+    }
+    .step-badge {
+      font-family: var(--mono);
+      font-size: 0.78rem;
+      color: #38bdf8;
+      background: rgba(56, 189, 248, 0.12);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      padding: 0.25rem 0.65rem;
+      border-radius: 4px;
+      display: inline-block;
+      margin-bottom: 1.1rem;
+    }
+    .process-step h4 {
+      font-family: var(--serif);
+      font-size: 1.35rem;
+      margin-bottom: 0.7rem;
+      color: var(--white);
+    }
+    .process-step p {
+      font-size: 0.88rem;
+      color: rgba(255, 255, 255, 0.72);
+      line-height: 1.65;
+    }
+
+    /* Incoterms & Quality Assurance Strip */
+    .assurance-bar {
+      margin-top: 3rem;
+      background: rgba(14, 165, 233, 0.1);
+      border: 1px solid rgba(56, 189, 248, 0.25);
+      border-radius: 10px;
+      padding: 1.8rem 2.2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+    .assurance-bar h5 {
+      font-family: var(--serif);
+      font-size: 1.35rem;
+      color: var(--white);
+      margin-bottom: 0.25rem;
+    }
+    .assurance-bar p {
+      font-size: 0.88rem;
+      color: rgba(255, 255, 255, 0.75);
+    }
+    .incoterm-badges {
+      display: flex;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+    }
+    .incoterm-badges span {
+      font-family: var(--mono);
+      font-size: 0.78rem;
+      padding: 0.45rem 0.85rem;
+      background: var(--navy-900);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 6px;
+      color: #7dd3fc;
+      font-weight: 600;
+    }
+
+    /* FAQ & Trading Terms Section */
+    .faq-section {
+      background: var(--white);
+      border-bottom: 1px solid var(--sand-200);
+    }
+    .faq-list {
+      max-width: 900px;
+      display: grid;
+      gap: 1rem;
+    }
+    .faq-item {
+      border: 1px solid var(--sand-200);
+      border-radius: 8px;
+      background: var(--sand-50);
+      overflow: hidden;
+    }
+    .faq-q {
+      width: 100%;
+      text-align: left;
+      padding: 1.25rem 1.5rem;
+      background: none;
       border: none;
-      color: var(--text-dark);
-      width: 34px;
-      height: 34px;
-      border-radius: 50%;
-      font-size: 16px;
+      font-family: var(--sans);
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--navy-900);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       cursor: pointer;
     }
-
-    .form-group {
-      margin-bottom: 16px;
-      text-align: left;
+    .faq-q span.icon {
+      font-family: var(--mono);
+      font-size: 1.2rem;
+      color: var(--azure-600);
+      transition: transform 0.2s;
     }
-
-    .form-label {
+    .faq-item.open .faq-q span.icon {
+      transform: rotate(45deg);
+    }
+    .faq-a {
+      display: none;
+      padding: 0 1.5rem 1.35rem;
+      color: var(--text-body);
+      font-size: 0.94rem;
+      border-top: 1px solid var(--sand-200);
+      padding-top: 1rem;
+    }
+    .faq-item.open .faq-a {
       display: block;
-      font-size: 11px;
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      color: var(--text-muted);
-      margin-bottom: 6px;
     }
 
-    .form-input, .form-select {
-      width: 100%;
-      background: var(--bg-light);
-      border: 1px solid var(--border-light);
+    /* Contact & RFQ Desk Section */
+    .contact-section {
+      background: var(--sand-100);
+    }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.15fr;
+      gap: 3.5rem;
+      align-items: start;
+    }
+    .office-card {
+      background: var(--navy-900);
+      color: var(--white);
+      padding: 2.5rem;
       border-radius: 12px;
-      padding: 13px 15px;
-      color: var(--text-dark);
-      font-size: 14px;
-      font-family: inherit;
+      box-shadow: 0 20px 40px -15px rgba(12, 27, 51, 0.25);
+    }
+    .office-card h3 {
+      font-family: var(--serif);
+      font-size: 1.75rem;
+      margin-bottom: 0.5rem;
+    }
+    .office-card .sub {
+      color: #7dd3fc;
+      font-family: var(--mono);
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 2rem;
+      display: block;
+    }
+    .info-list {
+      display: grid;
+      gap: 1.35rem;
+      margin-bottom: 2rem;
+    }
+    .info-row strong {
+      display: block;
+      font-family: var(--mono);
+      font-size: 0.74rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: rgba(255, 255, 255, 0.6);
+      margin-bottom: 0.25rem;
+    }
+    .info-row span, .info-row a {
+      font-size: 1rem;
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .info-row a:hover {
+      color: #7dd3fc;
+    }
+
+    .rfq-form {
+      background: var(--white);
+      padding: 2.5rem;
+      border-radius: 12px;
+      border: 1px solid var(--sand-200);
+    }
+    .rfq-form h3 {
+      font-family: var(--serif);
+      font-size: 1.65rem;
+      color: var(--navy-900);
+      margin-bottom: 0.4rem;
+    }
+    .rfq-form p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-bottom: 1.6rem;
+    }
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+    .form-group {
+      margin-bottom: 1rem;
+    }
+    .form-group label {
+      display: block;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--navy-900);
+      margin-bottom: 0.4rem;
+    }
+    .form-group input, .form-group select, .form-group textarea {
+      width: 100%;
+      padding: 0.75rem 0.95rem;
+      border: 1px solid var(--sand-200);
+      border-radius: 6px;
+      font-family: var(--sans);
+      font-size: 0.9rem;
+      color: var(--text-main);
+      background: var(--sand-50);
+    }
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
       outline: none;
+      border-color: var(--azure-600);
+      background: var(--white);
     }
 
-    .form-input:focus, .form-select:focus {
-      border-color: var(--accent-indigo);
-      background: var(--bg-white);
+    /* Footer */
+    .site-footer {
+      background: var(--navy-950);
+      color: rgba(255, 255, 255, 0.7);
+      padding: 3.5rem 0 2.5rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .footer-brand {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .footer-brand img {
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      background: var(--white);
+      padding: 2px;
+    }
+    .footer-brand h4 {
+      font-family: var(--serif);
+      color: var(--white);
+      font-size: 1.35rem;
+    }
+    .footer-brand p {
+      font-size: 0.8rem;
+      color: rgba(255, 255, 255, 0.6);
+    }
+    .footer-bottom {
+      padding-top: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      font-size: 0.8rem;
+      gap: 1rem;
     }
 
-    @media (max-width: 980px) {
-      .hero-devices-stage {
-        flex-direction: column;
-        align-items: center;
-        height: auto;
-      }
-      .device-left, .device-right {
-        transform: none !important;
-        width: 100%;
-        max-width: 340px;
-      }
-      .sticky-iso-grid,
-      .device-showcase-grid,
-      .accordion-grid {
+    @media (max-width: 1024px) {
+      .hero-grid, .about-grid, .contact-grid {
         grid-template-columns: 1fr;
       }
-      .scroll-progress-rail {
+      .commodity-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .process-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 680px) {
+      .nav-links {
         display: none;
       }
-      .iso-sticky-box,
-      .sticky-phone-wrap {
-        position: relative;
-        top: 0;
-        margin-bottom: 32px;
-      }
-      .iso-scroll-steps,
-      .device-narrative-steps {
-        gap: 60px;
-        padding: 20px 0;
-      }
-      .iso-step-block,
-      .narrative-block {
-        opacity: 1;
-      }
-      .footer-pills-row {
-        grid-template-columns: 1fr 1fr;
-      }
-      .orbit-pill {
-        display: none;
+      .commodity-grid, .process-grid, .pillars-grid, .form-row, .hero-metrics {
+        grid-template-columns: 1fr;
       }
     }
   </style>
 </head>
 <body>
 
-  <!-- ========================================================================
-       1. HERO SECTION: CLEAN & NEAT BARSANA SEAL + TILTED COMMODITY SCREENS
-       ======================================================================== -->
-  <section class="hero-section">
-    <div class="container">
-      <nav class="nav-bar">
-        <a href="#" class="brand-name">Barsana International LLC</a>
-        <div class="nav-right-links">
-          <a href="#philosophy">Our Story</a>
-          <a href="#process">Global Movement</a>
-          <a href="#products">Products</a>
-          <a href="#contact">Contact</a>
-          <div class="nav-social-group">
-            <a href="https://www.linkedin.com/search/results/all/?keywords=Barsana%20International%20LLC" target="_blank" rel="noopener" class="nav-social-icon" title="Barsana International on LinkedIn" aria-label="LinkedIn">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
-              </svg>
-            </a>
-            <a href="https://www.instagram.com/" target="_blank" rel="noopener" class="nav-social-icon" title="Barsana International on Instagram" aria-label="Instagram">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/>
-              </svg>
-            </a>
-          </div>
-        </div>
-      </nav>
-
-      <div class="hero-center">
-        <p class="hero-eyebrow">Importers &amp; Global Commodity Traders · Led by You and Me</p>
-        <div>
-          <img src="barsana-logo.png" alt="Barsana International LLC Seal" class="hero-main-logo">
-        </div>
-        <p class="hero-subheadline">
-          Graduated from the ground level in Shipping, Logistics &amp; Cargo Handling—we trade a diversified global portfolio across Technical Grade Urea, Sulphur, Gypsum, Fertilizers, Base Metals, and Precious Metals with honesty and integrity.
-        </p>
-        <button class="btn-dark-pill" onclick="openConsultation('Global Commodity Sourcing')">
-          Inquire Trade Desk
-        </button>
-
-        <!-- Two Tilted Dark Commodity Portfolio Screens -->
-        <div class="hero-devices-stage">
-          <!-- Left Screen: Commodity Desk -->
-          <div class="hero-device device-left">
-            <div>
-              <div class="dev-top-bar">
-                <span>Barsana Trade Desk</span>
-                <span class="dev-pill-tag">Global Supply</span>
-              </div>
-              <div style="font-size:15px; font-weight:800; margin-bottom:4px;">Commodity Portfolio</div>
-              <div style="font-size:11.5px; color:#94a3b8; margin-bottom:18px;">Verified Global Origin &amp; Logistics</div>
-
-              <div class="dev-asset-row">
-                <div class="dev-asset-left">
-                  <div class="dev-dot" style="background:#38bdf8; color:#07152b;">UR</div>
-                  <div>
-                    <div style="font-size:12.5px; font-weight:700;">Technical Grade Urea</div>
-                    <div style="font-size:10px; color:#94a3b8;">46% N · Industrial &amp; AdBlue</div>
-                  </div>
-                </div>
-                <span style="font-size:11px; color:#38bdf8; font-weight:700;">High Purity</span>
-              </div>
-
-              <div class="dev-asset-row">
-                <div class="dev-asset-left">
-                  <div class="dev-dot" style="background:#f59e0b; color:#07152b;">CU</div>
-                  <div>
-                    <div style="font-size:12.5px; font-weight:700;">Base &amp; Ferrous Metals</div>
-                    <div style="font-size:10px; color:#94a3b8;">Copper, Zinc, Aluminum, Steel</div>
-                  </div>
-                </div>
-                <span style="font-size:11px; color:#4ade80; font-weight:700;">Active</span>
-              </div>
-
-              <div class="dev-asset-row" style="border-bottom:none;">
-                <div class="dev-asset-left">
-                  <div class="dev-dot" style="background:#eab308; color:#07152b;">AU</div>
-                  <div>
-                    <div style="font-size:12.5px; font-weight:700;">Precious Metals &amp; Sulphur</div>
-                    <div style="font-size:10px; color:#94a3b8;">Physical Gold, Silver &amp; Gypsum</div>
-                  </div>
-                </div>
-                <span style="font-size:11px; color:#7dd3fc; font-weight:700;">Physical</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Right Screen: Maritime & Supply Chain Trajectory -->
-          <div class="hero-device device-right">
-            <div>
-              <div class="dev-top-bar">
-                <span>Sharjah UAE Hub</span>
-                <span style="color:#38bdf8; font-weight:700;">● Worldwide</span>
-              </div>
-              <div style="font-size:21px; font-weight:800; letter-spacing:-0.5px;">Maritime &amp; Cargo</div>
-              <div style="font-size:11.5px; color:#7dd3fc; margin-bottom:16px;">▲ 200+ Curated Supplier Network</div>
-
-              <svg viewBox="0 0 260 110" style="width:100%; height:115px; overflow:visible;">
-                <defs>
-                  <linearGradient id="curveGrad" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stop-color="#0284c7" stop-opacity="0.5"/>
-                    <stop offset="100%" stop-color="#0284c7" stop-opacity="0"/>
-                  </linearGradient>
-                </defs>
-                <path d="M0,95 C40,88 65,65 100,72 C135,79 160,38 195,44 C225,48 240,18 260,12 L260,110 L0,110 Z" fill="url(#curveGrad)"/>
-                <path d="M0,95 C40,88 65,65 100,72 C135,79 160,38 195,44 C225,48 240,18 260,12" fill="none" stroke="#38bdf8" stroke-width="3" stroke-linecap="round"/>
-                <circle cx="260" cy="12" r="4.5" fill="#7dd3fc"/>
-              </svg>
-
-              <div style="display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-top:18px;">
-                <div style="background:#fff; color:#07152b; text-align:center; padding:9px; border-radius:20px; font-size:11.5px; font-weight:800; cursor:pointer;" onclick="openConsultation('Product Specifications')">Products</div>
-                <div style="border:1px solid rgba(255,255,255,0.25); text-align:center; padding:9px; border-radius:20px; font-size:11.5px; font-weight:700; cursor:pointer;" onclick="openConsultation('Partnership Inquiry')">Partner</div>
-              </div>
-            </div>
-          </div>
-        </div>
+  <!-- Institutional Top Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-meta">
+        <span><i class="dot"></i> SHARJAH MEDIA CITY (SHAMS), UAE</span>
+        <span>DESK: AMIT VORA</span>
+        <span>INCOTERMS: FOB • CFR • CIF • DAP</span>
       </div>
-    </div>
-
-    <!-- Scrolling Maritime Marquee Ribbon -->
-    <div class="marquee-ribbon">
-      <div class="marquee-track">
-        <span>✦ TECHNICAL GRADE UREA (46% N)</span>
-        <span>✦ SULPHUR &amp; NATURAL GYPSUM</span>
-        <span>✦ COPPER, ZINC &amp; ALUMINUM</span>
-        <span>✦ PHYSICAL GOLD &amp; SILVER</span>
-        <span>✦ FERTILIZERS &amp; AGRI INPUTS</span>
-        <span>✦ SHIPPING, LOGISTICS &amp; CARGO HANDLING</span>
-        <span>✦ TECHNICAL GRADE UREA (46% N)</span>
-        <span>✦ SULPHUR &amp; NATURAL GYPSUM</span>
-        <span>✦ COPPER, ZINC &amp; ALUMINUM</span>
+      <div class="top-links">
+        <a href="mailto:trade@barsanaintl.com">trade@barsanaintl.com</a>
+        <a href="https://www.linkedin.com/company/barsana-international" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.instagram.com/barsanaintl/" target="_blank" rel="noopener">Instagram</a>
       </div>
-    </div>
-  </section>
-
-  <!-- ========================================================================
-       2. DARK ORBITING PILLS SECTION (DEPTH-OF-FIELD BLUR)
-       ======================================================================== -->
-  <section class="orbit-dark-section">
-    <div class="orbit-pill op-1" onclick="openConsultation('Technical Grade Urea')">
-      <span class="pill-icon-circle" style="background:#0284c7;">⚗</span>
-      <span>Technical Grade Urea</span>
-    </div>
-    <div class="orbit-pill op-2" onclick="openConsultation('Base Metals')">
-      <span class="pill-icon-circle" style="background:#f59e0b; color:#07152b;">⚙</span>
-      <span>Copper, Zinc &amp; Aluminum</span>
-    </div>
-    <div class="orbit-pill op-3" onclick="openConsultation('Precious Metals')">
-      <span class="pill-icon-circle" style="background:#eab308; color:#07152b;">✦</span>
-      <span>Gold &amp; Silver Bullion</span>
-    </div>
-    <div class="orbit-pill op-4" onclick="openConsultation('Sulphur & Gypsum')">
-      <span class="pill-icon-circle" style="background:#38bdf8; color:#07152b;">⚓</span>
-      <span>Sulphur &amp; Gypsum</span>
-    </div>
-    <div class="orbit-pill op-5">
-      <span class="pill-icon-circle" style="background:#10b981; color:#07152b;">🌾</span>
-      <span>NPK &amp; DAP Fertilizers</span>
-    </div>
-    <div class="orbit-pill op-6">
-      <span class="pill-icon-circle" style="background:#6366f1;">🚢</span>
-      <span>Shipping &amp; Cargo Handling</span>
-    </div>
-    <div class="orbit-pill op-7">
-      <span class="pill-icon-circle" style="background:#0ea5e9; color:#07152b;">🏗</span>
-      <span>Steel &amp; Heavy Equipment</span>
-    </div>
-
-    <div class="container">
-      <h2 class="orbit-headline">
-        ADDRESSING THE WORLD'S<br>
-        TRADE GAP THROUGH<br>
-        GLOBAL SOURCING AND<br>
-        MARITIME LOGISTICS
-      </h2>
-    </div>
-  </section>
-
-  <!-- ========================================================================
-       3. STICKY SCROLL-DOWN ISOMETRIC GRAPHICS SECTION (OUR STORY)
-       ======================================================================== -->
-  <section class="sticky-isometric-section" id="philosophy">
-    <div class="container">
-      <div class="sticky-iso-grid">
-        <!-- Left Sticky Box Containing 3 Morphing Isometric Vector Illustrations -->
-        <div class="iso-sticky-box">
-          <!-- Graphic 1: Isometric Global Trade Cycle with Official Barsana Seal -->
-          <div class="iso-graphic-layer active" id="iso-layer-0">
-            <svg viewBox="0 0 300 300" width="290" height="290">
-              <ellipse cx="150" cy="245" rx="70" ry="22" fill="rgba(2, 132, 199, 0.14)"/>
-              <g transform="translate(150, 150)">
-                <ellipse cx="0" cy="0" rx="58" ry="68" transform="rotate(-18)" fill="#ffffff" stroke="#152342" stroke-width="3"/>
-                <ellipse cx="-8" cy="-4" rx="46" ry="56" transform="rotate(-18)" fill="#f0f6fc" stroke="#152342" stroke-width="2.5"/>
-                <image href="barsana-logo.png" x="-42" y="-38" width="68" height="68" transform="rotate(-8)" />
-              </g>
-              <g class="spin-slow">
-                <path d="M 75,110 A 85,85 0 1,1 225,185" fill="none" stroke="#0284c7" stroke-width="18" stroke-linecap="round"/>
-                <path d="M 75,110 A 85,85 0 1,1 225,185" fill="none" stroke="#152342" stroke-width="2.5" stroke-linecap="round"/>
-                <polygon points="225,210 250,175 205,175" fill="#0284c7" stroke="#152342" stroke-width="2.5"/>
-              </g>
-            </svg>
-          </div>
-
-          <!-- Graphic 2: Isometric Commodity Trade Balance Scale -->
-          <div class="iso-graphic-layer" id="iso-layer-1">
-            <svg viewBox="0 0 300 300" width="290" height="290">
-              <ellipse cx="150" cy="248" rx="54" ry="20" fill="#ffffff" stroke="#152342" stroke-width="2.5"/>
-              <ellipse cx="150" cy="242" rx="44" ry="15" fill="#d8ecff" stroke="#152342" stroke-width="2"/>
-              <rect x="144" y="85" width="12" height="158" rx="4" fill="#ffffff" stroke="#152342" stroke-width="2.5"/>
-              <rect x="138" y="110" width="24" height="24" rx="4" fill="#ffffff" stroke="#152342" stroke-width="2.5"/>
-              <g class="tilt-balance">
-                <line x1="65" y1="122" x2="235" y2="122" stroke="#152342" stroke-width="5" stroke-linecap="round"/>
-                <line x1="70" y1="122" x2="48" y2="180" stroke="#152342" stroke-width="2"/>
-                <line x1="70" y1="122" x2="92" y2="180" stroke="#152342" stroke-width="2"/>
-                <path d="M 38,180 A 32,16 0 0,0 102,180 Z" fill="#0284c7" stroke="#152342" stroke-width="2.5"/>
-                <ellipse cx="70" cy="180" rx="32" ry="10" fill="#7dd3fc" stroke="#152342" stroke-width="2"/>
-                <line x1="230" y1="122" x2="208" y2="180" stroke="#152342" stroke-width="2"/>
-                <line x1="230" y1="122" x2="252" y2="180" stroke="#152342" stroke-width="2"/>
-                <path d="M 198,180 A 32,16 0 0,0 262,180 Z" fill="#152342" stroke="#152342" stroke-width="2.5"/>
-                <ellipse cx="230" cy="180" rx="32" ry="10" fill="#93c5fd" stroke="#152342" stroke-width="2"/>
-              </g>
-            </svg>
-          </div>
-
-          <!-- Graphic 3: Isometric Supply Chain Stack & Integrity Shield -->
-          <div class="iso-graphic-layer" id="iso-layer-2">
-            <svg viewBox="0 0 300 300" width="290" height="290">
-              <ellipse cx="150" cy="245" rx="75" ry="24" fill="rgba(2, 132, 199, 0.14)"/>
-              <g transform="translate(55, 135)">
-                <polygon points="0,45 75,10 135,40 60,75" fill="#ffffff" stroke="#152342" stroke-width="2.5"/>
-                <polygon points="0,30 75,-5 135,25 60,60" fill="#d8ecff" stroke="#152342" stroke-width="2.5"/>
-                <polygon points="0,15 75,-20 135,10 60,45" fill="#ffffff" stroke="#152342" stroke-width="2.5"/>
-                <polygon points="45,-6 65,-16 95,-1 75,9" fill="#0284c7" stroke="#152342" stroke-width="2"/>
-              </g>
-              <g class="pulse-shield">
-                <path d="M 155,75 L 235,102 C 235,165 205,205 185,225 C 165,205 145,155 155,75 Z" fill="#152342"/>
-                <path d="M 148,70 L 228,97 C 228,160 198,200 178,220 C 158,200 138,150 148,70 Z" fill="#0284c7" stroke="#152342" stroke-width="3"/>
-                <circle cx="186" cy="134" r="9" fill="#ffffff"/>
-                <polygon points="182,138 190,138 193,162 179,162" fill="#ffffff"/>
-              </g>
-            </svg>
-          </div>
-        </div>
-
-        <!-- Right Scrolling Steps -->
-        <div class="iso-scroll-steps">
-          <div class="iso-step-block active" data-iso="0" onclick="activateIsoStep(0)">
-            <div class="iso-step-header">
-              <span class="iso-big-stat">25+</span>
-              <span class="iso-stat-tag">YEARS OF EXPERIENCE</span>
-            </div>
-            <p class="iso-step-desc">
-              Barsana International LLC—fondly known as ‘Barsana’—is a group of traders who have graduated from the ground level, gaining deep operational mastery in Shipping, Logistics, &amp; Cargo Handling alongside Real Estate and backing for SMEs and Start-ups.
-            </p>
-          </div>
-
-          <div class="iso-step-block" data-iso="1" onclick="activateIsoStep(1)">
-            <div class="iso-step-header">
-              <span class="iso-big-stat">100s</span>
-              <span class="iso-stat-tag">OF VALUED CLIENTS</span>
-            </div>
-            <p class="iso-step-desc">
-              With a culture of forming lasting alliances, our purpose is to create value in everything we plan to do for everyone involved. We work closely with industrial and agricultural buyers to provide customized sourcing and competitive global pricing.
-            </p>
-          </div>
-
-          <div class="iso-step-block" data-iso="2" onclick="activateIsoStep(2)">
-            <div class="iso-step-header">
-              <span class="iso-big-stat">200+</span>
-              <span class="iso-stat-tag">CHERISHED GLOBAL NETWORK</span>
-            </div>
-            <p class="iso-step-desc">
-              We rely on our individually created and curated global network of suppliers and shipping agents who are the major assets of the company—delivering to customers around the world with Honesty, Integrity, and environmental responsibility.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========================================================================
-       4. STICKY DEVICE SHOWCASE + SCROLLING COMMODITY NARRATIVES
-       ======================================================================== -->
-  <section class="device-scroll-section" id="process">
-    <div class="container">
-      <div class="device-showcase-grid">
-        <div class="scroll-progress-rail">
-          <div class="rail-dot active" id="rail-0"></div>
-          <div class="rail-dot" id="rail-1"></div>
-          <div class="rail-dot" id="rail-2"></div>
-        </div>
-
-        <!-- Center Sticky Dark Terminal Frame with Sliding Screens -->
-        <div class="sticky-phone-wrap">
-          <div class="phone-frame">
-            <!-- Slide 0: Chemicals, Urea & Agri Inputs -->
-            <div class="phone-screen-slide active" id="phone-slide-0">
-              <div>
-                <div class="dev-top-bar">
-                  <span>CHEMICALS &amp; AGRI</span>
-                  <span class="dev-pill-tag">Division 01</span>
-                </div>
-                <div style="font-size:20px; font-weight:800; margin-bottom:4px;">Urea &amp; Fertilizers</div>
-                <div style="font-size:12px; color:#38bdf8; margin-bottom:22px;">● 46% Nitrogen · Low Biuret</div>
-
-                <svg viewBox="0 0 260 120" style="width:100%; height:130px;">
-                  <path d="M0,100 Q45,65 85,75 T165,40 T260,15" fill="none" stroke="#38bdf8" stroke-width="3"/>
-                  <line x1="0" y1="115" x2="260" y2="115" stroke="rgba(255,255,255,0.1)"/>
-                </svg>
-
-                <div style="display:flex; justify-content:space-between; font-size:10px; color:#94a3b8; margin-top:8px;">
-                  <span>UREA</span><span>SULPHUR</span><span>GYPSUM</span><span>SODA ASH</span>
-                </div>
-              </div>
-
-              <div style="background:rgba(255,255,255,0.07); border:1px solid rgba(255,255,255,0.1); border-radius:18px; padding:16px;">
-                <div style="font-size:11px; color:#7dd3fc; margin-bottom:6px; font-weight:700;">PRECISION INDUSTRIAL GRADE</div>
-                <div style="font-size:13px; font-weight:700; line-height:1.4;">
-                  AdBlue/AUS 32, resins, melamine, pharmaceuticals &amp; NPK fertilizers.
-                </div>
-              </div>
-            </div>
-
-            <!-- Slide 1: Base, Ferrous & Precious Metals -->
-            <div class="phone-screen-slide" id="phone-slide-1">
-              <div>
-                <div class="dev-top-bar">
-                  <span>METALS &amp; BULLION</span>
-                  <span class="dev-pill-tag">Division 02</span>
-                </div>
-                <div style="text-align:center; padding:18px 0;">
-                  <div style="font-size:11px; color:#94a3b8; text-transform:uppercase; letter-spacing:1px;">Physical &amp; Industrial</div>
-                  <div style="font-size:30px; font-weight:900; margin:6px 0;">Metals Desk</div>
-                  <div style="font-size:11px; color:var(--accent-periwinkle);">Ferrous · Non-Ferrous · Bullion</div>
-                </div>
-
-                <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:10px; text-align:center; margin-top:14px;">
-                  <div style="background:rgba(255,255,255,0.08); padding:12px 6px; border-radius:12px; font-size:11px; font-weight:700;">Copper</div>
-                  <div style="background:rgba(255,255,255,0.08); padding:12px 6px; border-radius:12px; font-size:11px; font-weight:700;">Aluminum</div>
-                  <div style="background:rgba(255,255,255,0.08); padding:12px 6px; border-radius:12px; font-size:11px; font-weight:700;">Zinc</div>
-                  <div style="background:rgba(255,255,255,0.08); padding:12px 6px; border-radius:12px; font-size:11px; font-weight:700;">Iron Ore</div>
-                  <div style="background:rgba(255,255,255,0.08); padding:12px 6px; border-radius:12px; font-size:11px; font-weight:700;">Gold</div>
-                  <div style="background:rgba(255,255,255,0.08); padding:12px 6px; border-radius:12px; font-size:11px; font-weight:700;">Silver</div>
-                </div>
-              </div>
-
-              <button class="btn-dark-pill" style="background:#38bdf8; color:#07152b; width:100%; justify-content:center;" onclick="openConsultation('Metals & Bullion Desk')">
-                Request Metal Quote
-              </button>
-            </div>
-
-            <!-- Slide 2: Steel, Heavy Machinery & Windmill Sourcing -->
-            <div class="phone-screen-slide" id="phone-slide-2">
-              <div>
-                <div class="dev-top-bar">
-                  <span>INDUSTRIAL SOURCING</span>
-                  <span class="dev-pill-tag">Division 03</span>
-                </div>
-                <div style="font-size:18px; font-weight:800; margin-bottom:18px;">Equipment &amp; Infrastructure</div>
-
-                <div style="background:rgba(255,255,255,0.07); border-radius:16px; padding:16px; margin-bottom:12px; border-left:3px solid #38bdf8;">
-                  <div style="font-size:12.5px; font-weight:800; margin-bottom:4px;">Structural &amp; Flat Steel</div>
-                  <div style="font-size:11px; color:#cbd5e1;">Plates, Coils, ERW/Seamless Pipes, Beams &amp; TMT Bars.</div>
-                </div>
-
-                <div style="background:rgba(255,255,255,0.07); border-radius:16px; padding:16px; margin-bottom:12px; border-left:3px solid #f59e0b;">
-                  <div style="font-size:12.5px; font-weight:800; margin-bottom:4px;">Heavy Earthmoving Machinery</div>
-                  <div style="font-size:11px; color:#cbd5e1;">Mobile Cranes, Excavators, Loaders, Dozers &amp; Reach Stackers.</div>
-                </div>
-
-                <div style="background:rgba(255,255,255,0.07); border-radius:16px; padding:16px; border-left:3px solid #10b981;">
-                  <div style="font-size:12.5px; font-weight:800; margin-bottom:4px;">Windmill Energy Components</div>
-                  <div style="font-size:11px; color:#cbd5e1;">Turbines, Blades, Nacelles, Hubs &amp; Tower Sections.</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Right Scrolling Narrative Blocks -->
-        <div class="device-narrative-steps">
-          <div class="narrative-block active" data-slide="0" onclick="activatePhoneSlide(0)">
-            <span class="narrative-tag">INDUSTRIAL CHEMICALS &amp; AGRI INPUTS</span>
-            <h3 class="narrative-title">High-purity Technical Grade Urea, Sulphur, Gypsum &amp; Fertilizers.</h3>
-            <p class="narrative-desc">
-              We supply Technical Grade Urea (46% nitrogen, low biuret, high solubility for resins, melamine, AdBlue/AUS 32, and pharmaceuticals), alongside Granular/Powdered Sulphur, Natural Gypsum, Soda Ash, DAP, MAP, MOP, and SOP.
-            </p>
-            <button class="btn-dark-pill" onclick="openConsultation('Chemicals & Fertilizers')">Request Chemical Specs</button>
-          </div>
-
-          <div class="narrative-block" data-slide="1" onclick="activatePhoneSlide(1)">
-            <span class="narrative-tag">BASE, FERROUS &amp; PRECIOUS METALS</span>
-            <h3 class="narrative-title">Global trading in Copper, Zinc, Aluminum, Iron Ore &amp; Physical Bullion.</h3>
-            <p class="narrative-desc">
-              From Non-Ferrous metals (Copper Cathodes &amp; Wire Rods, Aluminum Ingots, Zinc Ingots, Lead) and Ferrous raw materials (Iron Ore Pellets/Lumps, HBI) to Physical Gold and Silver, we connect verified global producers with industrial buyers.
-            </p>
-            <div class="narrative-float-card">
-              <div style="width:36px; height:36px; border-radius:50%; background:var(--accent-soft); display:flex; align-items:center; justify-content:center; font-weight:800;">⚓</div>
-              <div>
-                <div style="font-size:13.5px; font-weight:800;">End-to-End Cargo &amp; Chartering</div>
-                <div style="font-size:11.5px; color:var(--text-muted);">Sharjah Media City, UAE Desk</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="narrative-block" data-slide="2" onclick="activatePhoneSlide(2)">
-            <span class="narrative-tag">STEEL, MACHINERY &amp; RENEWABLE SOURCING</span>
-            <h3 class="narrative-title">Structural Steel, Heavy Industrial Equipment &amp; Windmill Accessories.</h3>
-            <p class="narrative-desc">
-              Complete sourcing capabilities for Steel Plates, Coils, Pipes &amp; TMT Bars, Heavy Construction Equipment (Mobile Cranes, Excavators, Forklifts), and Windmill Turbines, Blades, Nacelles &amp; Tower Sections—plus backing for SMEs and Start-ups.
-            </p>
-            <div class="narrative-float-card">
-              <div style="width:36px; height:36px; border-radius:50%; background:#dcfce7; color:#166534; display:flex; align-items:center; justify-content:center; font-weight:800;">✓</div>
-              <div>
-                <div style="font-size:13.5px; font-weight:800;">Honesty, Integrity &amp; Sustainability</div>
-                <div style="font-size:11.5px; color:var(--text-muted);">200+ Verified Supplier &amp; Agent Network</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========================================================================
-       5. INTERACTIVE ACCORDION PRODUCTS COVERED SECTION
-       ======================================================================== -->
-  <section class="accordion-section" id="products">
-    <div class="container">
-      <div class="accordion-grid">
-        <div>
-          <h2 class="narrative-title" style="margin-bottom:20px;">
-            We Trade.<br>
-            Global Commodities!
-          </h2>
-          <p style="font-size:15px; color:var(--text-muted); line-height:1.7; margin-bottom:28px; max-width:360px;">
-            Our trading expertise spans a broad spectrum across Fertilizers, Technical Grade Urea, Sulphur, Gypsum, Ferrous &amp; Non-Ferrous Metals, Precious Metals, Steel, and Industrial Equipment.
-          </p>
-          <button class="btn-dark-pill" onclick="openConsultation('General Commodity Inquiry')">
-            Submit Trade Inquiry
-          </button>
-        </div>
-
-        <div class="acc-list">
-          <div class="acc-item open" onclick="toggleAccordion(this)">
-            <div class="acc-header">
-              <span>Technical Grade Urea (46% Nitrogen)</span>
-              <span class="acc-chevron">⌄</span>
-            </div>
-            <div class="acc-body">
-              High-purity industrial urea with consistent 46% nitrogen content, low biuret levels, and high solubility—used in resins, adhesives, melamine, diesel exhaust fluid (AdBlue/AUS 32), pharmaceuticals, cosmetics, and textile finishing.
-            </div>
-          </div>
-
-          <div class="acc-item" onclick="toggleAccordion(this)">
-            <div class="acc-header">
-              <span>Fertilizers &amp; Agricultural Inputs</span>
-              <span class="acc-chevron">⌄</span>
-            </div>
-            <div class="acc-body">
-              Ammonium Sulphate, Ammonium Nitrate, Calcium Ammonium Nitrate (CAN), Potassium Chloride (MOP), Potassium Sulphate (SOP), Single Super Phosphate (SSP), Diammonium Phosphate (DAP), and Monoammonium Phosphate (MAP).
-            </div>
-          </div>
-
-          <div class="acc-item" onclick="toggleAccordion(this)">
-            <div class="acc-header">
-              <span>Sulphur, Natural Gypsum, Soda Ash &amp; Micronutrients</span>
-              <span class="acc-chevron">⌄</span>
-            </div>
-            <div class="acc-body">
-              Granular, Powdered, and Lump Sulphur, Natural Gypsum, Soda Ash, Intermediate Chemicals, and custom-ratio NPK Compound Fertilizers sourced from premier global producers.
-            </div>
-          </div>
-
-          <div class="acc-item" onclick="toggleAccordion(this)">
-            <div class="acc-header">
-              <span>Non-Ferrous &amp; Base Metals</span>
-              <span class="acc-chevron">⌄</span>
-            </div>
-            <div class="acc-body">
-              Copper (Cathodes, Wire Rods, Scrap), Aluminum (Ingots &amp; Allied Products), Zinc (Ingots), and Lead (Battery Scrap) delivered through reliable maritime routes.
-            </div>
-          </div>
-
-          <div class="acc-item" onclick="toggleAccordion(this)">
-            <div class="acc-header">
-              <span>Ferrous Metals &amp; Structural Steel</span>
-              <span class="acc-chevron">⌄</span>
-            </div>
-            <div class="acc-body">
-              Iron Ore (Lumps, Fines, Pellets), Hot Briquetted Iron (HBI), Steel Plates, Coils, Sheets, ERW/Seamless/Galvanized Pipes &amp; Tubes, Beams, Channels, Angles, TMT Bars, and Wire Rods.
-            </div>
-          </div>
-
-          <div class="acc-item" onclick="toggleAccordion(this)">
-            <div class="acc-header">
-              <span>Physical Precious Metals (Gold &amp; Silver)</span>
-              <span class="acc-chevron">⌄</span>
-            </div>
-            <div class="acc-body">
-              Physical Gold and Silver trading backed by transparent provenance, strict compliance, and secure international settlement.
-            </div>
-          </div>
-
-          <div class="acc-item" onclick="toggleAccordion(this)">
-            <div class="acc-header">
-              <span>Heavy Industrial Equipment &amp; Windmill Accessories (Sourcing)</span>
-              <span class="acc-chevron">⌄</span>
-            </div>
-            <div class="acc-body">
-              Dedicated global sourcing for Mobile Cranes, Excavators, Loaders, Dozers, Forklifts &amp; Reach Stackers, as well as Windmill Turbines, Blades, Nacelles, Hubs, and Tower Sections.
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========================================================================
-       6. MARQUEE RIBBON + DARK FOOTER WITH COMPACT ADDRESS
-       ======================================================================== -->
-  <div class="marquee-ribbon">
-    <div class="marquee-track">
-      <span>✦ BARSANA INTERNATIONAL LLC</span>
-      <span>✦ LED BY YOU AND ME</span>
-      <span>✦ HONESTY &amp; INTEGRITY IN GLOBAL TRADE</span>
-      <span>✦ SHARJAH MEDIA CITY, UAE</span>
-      <span>✦ BARSANA INTERNATIONAL LLC</span>
-      <span>✦ LED BY YOU AND ME</span>
-      <span>✦ HONESTY &amp; INTEGRITY IN GLOBAL TRADE</span>
-      <span>✦ SHARJAH MEDIA CITY, UAE</span>
     </div>
   </div>
 
-  <footer class="dark-footer" id="contact">
+  <!-- Main Navigation -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="brand">
+        <img src="barsana-logo.png" alt="Barsana International LLC Official Seal" />
+        <div class="brand-text">
+          <span class="brand-title">BARSANA INTERNATIONAL LLC</span>
+          <span class="brand-subtitle">Importers • Maritime Logistics • Global Traders</span>
+        </div>
+      </a>
+      <nav class="nav-links">
+        <a href="#mandate">Corporate Profile</a>
+        <a href="#commodities">Commodity Divisions</a>
+        <a href="#logistics">Maritime Logistics</a>
+        <a href="#faq">Trading Terms</a>
+        <a href="#contact">Trade Desk</a>
+      </nav>
+      <div class="header-actions">
+        <a href="https://www.linkedin.com/company/barsana-international" target="_blank" rel="noopener" class="social-icon" title="LinkedIn" aria-label="LinkedIn">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/barsanaintl/" target="_blank" rel="noopener" class="social-icon" title="Instagram" aria-label="Instagram">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/></svg>
+        </a>
+        <a href="#contact" class="btn-primary">Request Specification / Quote</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="hero-kicker">UAE International Commodity Trading House</div>
+        <h1>Global Resource Sourcing &amp; <span>Maritime Supply Chain</span> Execution.</h1>
+        <p class="hero-lead">
+          Headquartered in Sharjah Media City, UAE, <strong>Barsana International LLC</strong> bridges primary refineries, mines, and industrial manufacturers across the Arabian Gulf, South Asia, Africa, and Europe—delivering certified industrial chemicals, fertilizers, ferrous &amp; non-ferrous metals, precious bullion, and heavy engineering assets.
+        </p>
+        <div class="hero-cta-group">
+          <a href="#commodities" class="btn-hero-primary">Explore Commodity Specifications →</a>
+          <a href="#contact" class="btn-hero-secondary">Contact UAE Trade Desk</a>
+        </div>
+        <div class="hero-metrics">
+          <div class="metric-item">
+            <strong>6 Core</strong>
+            <span>Global Commodity &amp; Engineering Divisions</span>
+          </div>
+          <div class="metric-item">
+            <strong>SGS / BV</strong>
+            <span>Independent Load-Port Quality Assay</span>
+          </div>
+          <div class="metric-item">
+            <strong>UAE Hub</strong>
+            <span>Sharjah Media City Trade Operations</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Executive Trade Desk Panel -->
+      <div class="trade-desk-card">
+        <div class="desk-header">
+          <img src="barsana-logo.png" alt="Barsana International Seal" />
+          <div class="desk-header-text">
+            <h3>Physical Commodity Desk</h3>
+            <p>Sharjah Media City • United Arab Emirates</p>
+          </div>
+        </div>
+        <div class="desk-corridors">
+          <div class="corridor-row">
+            <span class="label">Industrial Chemicals</span>
+            <span class="val">Urea 46% N • Sulphur • Gypsum • Soda Ash</span>
+          </div>
+          <div class="corridor-row">
+            <span class="label">Bulk Fertilizers</span>
+            <span class="val">DAP • MAP • MOP • SOP • CAN</span>
+          </div>
+          <div class="corridor-row">
+            <span class="label">Metals &amp; Steel</span>
+            <span class="val">HRC/CRC • Plates • Cu • Zn • Al • HBI</span>
+          </div>
+          <div class="corridor-row">
+            <span class="label">Precious Bullion</span>
+            <span class="val">Physical Gold (999.9) &amp; Silver Bars</span>
+          </div>
+          <div class="corridor-row">
+            <span class="label">Heavy Machinery &amp; Wind</span>
+            <span class="val">Cranes • Excavators • Wind Turbines</span>
+          </div>
+        </div>
+        <div class="desk-footer">
+          <span>Principal Contact: <strong>Amit Vora</strong></span>
+          <a href="mailto:trade@barsanaintl.com">trade@barsanaintl.com</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us / Corporate Mandate -->
+  <section id="mandate" class="about-section">
     <div class="container">
-      <div style="margin-bottom: 22px;">
-        <img src="barsana-logo.png" alt="Barsana International LLC Seal" style="height: 78px; width: 78px; border-radius: 50%; display: inline-block;">
-      </div>
-      <div class="footer-contact-tag">Contact Trade Desk</div>
-      <a href="mailto:trade@barsanaintl.com" class="footer-giant-email">trade@barsanaintl.com</a>
-
-      <!-- Compact Office Row -->
-      <div class="footer-offices-compact">
-        <div class="office-mini-col">
-          <div class="office-mini-label">Corporate Headquarters (UAE)</div>
-          <div class="office-mini-text">
-            <strong>Amit Vora</strong><br>
-            Barsana International LLC<br>
-            Sharjah Media City, Sharjah – UAE
+      <div class="about-grid">
+        <div class="about-narrative">
+          <span class="section-kicker">01 // Institutional Profile</span>
+          <h2 class="section-title">Built on Physical Supply Reliability &amp; Maritime Discipline.</h2>
+          <p>
+            <strong>Barsana International LLC</strong> operates from the United Arab Emirates as a multi-commodity trading, import-export, and maritime logistics enterprise. In a volatile global supply environment, industrial buyers require more than brokerage—they require assured physical allocation, strict adherence to chemical and metallurgical specifications, and synchronized vessel chartering.
+          </p>
+          <p>
+            Through long-standing off-take relationships with primary producers in the Middle East, Central Asia, and the Indian Ocean Rim, we manage the complete transaction lifecycle: from mill and mine origin inspection to bulk vessel fixture, port stevedoring, and documentary credit execution.
+          </p>
+          <div class="quote-box">
+            <p>"Our mandate is straightforward: deliver specification-grade raw materials and capital equipment on schedule, backed by transparent documentation and uncompromised counterparty integrity."</p>
+            <span>— Amit Vora, Barsana International LLC (Sharjah, UAE)</span>
           </div>
         </div>
 
-        <div class="office-mini-col">
-          <div class="office-mini-label">Global Trade &amp; Logistics Desk</div>
-          <div class="office-mini-text">
-            Shipping, Chartering, Cargo Handling &amp; Commodity Sourcing<br>
-            Direct Desk: trade@barsanaintl.com
+        <div class="pillars-grid">
+          <div class="pillar-card">
+            <span class="pillar-num">PILLAR 01</span>
+            <h4>Direct Producer Allocation</h4>
+            <p>Origin sourcing directly from GCC petrochemical complexes, mineral quarries, and certified steel mills to eliminate intermediary markups.</p>
+          </div>
+          <div class="pillar-card">
+            <span class="pillar-num">PILLAR 02</span>
+            <h4>Bulk &amp; Breakbulk Chartering</h4>
+            <p>Dedicated maritime logistics desk handling Handysize, Supramax, and containerized shipments across Arabian Gulf, Red Sea, and Asian ports.</p>
+          </div>
+          <div class="pillar-card">
+            <span class="pillar-num">PILLAR 03</span>
+            <h4>Assay &amp; Compliance Rigor</h4>
+            <p>Every shipment is verified at load port by internationally accredited agencies (SGS, Bureau Veritas, Intertek) prior to Bill of Lading issuance.</p>
+          </div>
+          <div class="pillar-card">
+            <span class="pillar-num">PILLAR 04</span>
+            <h4>Structured Trade Finance</h4>
+            <p>Seamless coordination with international trade banks for Documentary Letters of Credit (DLC), SBLC, and CAD settlement structures.</p>
           </div>
         </div>
       </div>
+    </div>
+  </section>
 
-      <!-- 6 Outlined Pill Buttons with Gradient Glow on Hover -->
-      <div class="footer-pills-row">
-        <a href="mailto:trade@barsanaintl.com" class="footer-pill-btn">✉️ Email Trade Desk</a>
-        <a onclick="openConsultation('Commodity Quote Request')" class="footer-pill-btn">🚢 Request Quote</a>
-        <a onclick="openConsultation('Supplier / Agent Alliance')" class="footer-pill-btn">🌐 Partner Alliance</a>
-        <a onclick="openConsultation('Direct Trade Inquiry')" class="footer-pill-btn">💬 Trade Inquiry</a>
-        <a href="https://www.linkedin.com/search/results/all/?keywords=Barsana%20International%20LLC" target="_blank" rel="noopener" class="footer-pill-btn">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
-          </svg>
-          LinkedIn
-        </a>
-        <a href="https://www.instagram.com/" target="_blank" rel="noopener" class="footer-pill-btn">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/>
-          </svg>
-          Instagram
-        </a>
+  <!-- Comprehensive Commodity Catalog -->
+  <section id="commodities" class="catalog-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-kicker">02 // Technical Product Portfolio</span>
+        <h2 class="section-title">Global Commodity &amp; Engineering Divisions</h2>
+        <p class="section-desc">
+          Filter our physical trading portfolio below to review technical grades, purity benchmarks, and standard export packaging configurations.
+        </p>
       </div>
 
-      <div style="font-size:12px; color:#64748b;">
-        © 2026 Barsana International LLC. All Rights Reserved.
+      <div class="filter-tabs" role="tablist">
+        <button class="tab-btn active" onclick="filterCards('all', this)">All Divisions (9)</button>
+        <button class="tab-btn" onclick="filterCards('chemicals', this)">Industrial Chemicals</button>
+        <button class="tab-btn" onclick="filterCards('fertilizers', this)">Agricultural Fertilizers</button>
+        <button class="tab-btn" onclick="filterCards('metals', this)">Steel, Base Metals &amp; Bullion</button>
+        <button class="tab-btn" onclick="filterCards('machinery', this)">Heavy Machinery &amp; Wind Energy</button>
+      </div>
+
+      <div class="commodity-grid" id="commodityGrid">
+        <!-- Card 1: Technical Grade Urea -->
+        <div class="commodity-card" data-category="chemicals">
+          <div>
+            <span class="commodity-cat">Industrial Chemicals</span>
+            <h3>Technical Grade Urea (46% N)</h3>
+            <p>High-purity Prilled and Granular Urea engineered for industrial resin synthesis, adhesives, DEF/AdBlue production, and chemical processing.</p>
+            <table class="spec-table">
+              <tr><td>Nitrogen Content</td><td>46.0% Min (Dry Basis)</td></tr>
+              <tr><td>Biuret Content</td><td>0.9% Max</td></tr>
+              <tr><td>Moisture</td><td>0.5% Max</td></tr>
+              <tr><td>Granulometry</td><td>1–4 mm (90% Min)</td></tr>
+            </table>
+          </div>
+          <div class="card-tags">
+            <span class="tag">Prilled &amp; Granular</span>
+            <span class="tag">50kg PP / 1MT Jumbo</span>
+            <span class="tag">Bulk Vessel</span>
+          </div>
+        </div>
+
+        <!-- Card 2: Sulphur -->
+        <div class="commodity-card" data-category="chemicals">
+          <div>
+            <span class="commodity-cat">Industrial Chemicals</span>
+            <h3>Bright Yellow Sulphur</h3>
+            <p>Refinery-grade Granular and Lumps Sulphur sourced from Middle Eastern gas &amp; petrochemical plants for sulphuric acid and phosphate manufacturing.</p>
+            <table class="spec-table">
+              <tr><td>Purity (Dry Basis)</td><td>99.90% Min</td></tr>
+              <tr><td>Ash Content</td><td>0.05% Max</td></tr>
+              <tr><td>Acidity (as H2SO4)</td><td>0.005% Max</td></tr>
+              <tr><td>Form</td><td>Granular / Lumps</td></tr>
+            </table>
+          </div>
+          <div class="card-tags">
+            <span class="tag">99.9% Pure</span>
+            <span class="tag">Bulk / 1.25MT Bags</span>
+            <span class="tag">GCC Origin</span>
+          </div>
+        </div>
+
+        <!-- Card 3: Natural Gypsum & Soda Ash -->
+        <div class="commodity-card" data-category="chemicals">
+          <div>
+            <span class="commodity-cat">Industrial Minerals &amp; Alkalis</span>
+            <h3>Natural Gypsum &amp; Soda Ash</h3>
+            <p>High-purity mined Natural Gypsum for Portland cement &amp; wallboard plants, alongside Dense and Light Soda Ash (Sodium Carbonate) for glass &amp; detergents.</p>
+            <table class="spec-table">
+              <tr><td>Gypsum Purity (CaSO4·2H2O)</td><td>90.0% – 93.0% Min</td></tr>
+              <tr><td>Soda Ash Total Alkali</td><td>99.2% Min (Na2CO3)</td></tr>
+              <tr><td>Gypsum Size</td><td>0–50 mm Bulk Crushed</td></tr>
+              <tr><td>Soda Ash Grades</td><td>Light &amp; Dense</td></tr>
+            </table>
+          </div>
+          <div class="card-tags">
+            <span class="tag">Bulk Vessel Gypsum</span>
+            <span class="tag">Soda Ash Light/Dense</span>
+            <span class="tag">Cement &amp; Glass Grade</span>
+          </div>
+        </div>
+
+        <!-- Card 4: Phosphate & Nitrogen Fertilizers -->
+        <div class="commodity-card" data-category="fertilizers">
+          <div>
+            <span class="commodity-cat">Agricultural Fertilizers</span>
+            <h3>DAP, MAP &amp; CAN Fertilizers</h3>
+            <p>Free-flowing granular phosphate and nitrogenous fertilizers ensuring optimal crop nutrient uptake and long-term storage stability.</p>
+            <table class="spec-table">
+              <tr><td>DAP Specification</td><td>18% N • 46% P2O5</td></tr>
+              <tr><td>MAP Specification</td><td>11% N • 52% P2O5</td></tr>
+              <tr><td>CAN Specification</td><td>27% Nitrogen + Ca/Mg</td></tr>
+              <tr><td>Water Soluble P2O5</td><td>41.0% Min (DAP)</td></tr>
+            </table>
+          </div>
+          <div class="card-tags">
+            <span class="tag">DAP 18-46-0</span>
+            <span class="tag">MAP 11-52-0</span>
+            <span class="tag">CAN 27% N</span>
+          </div>
+        </div>
+
+        <!-- Card 5: Potash Fertilizers -->
+        <div class="commodity-card" data-category="fertilizers">
+          <div>
+            <span class="commodity-cat">Potash Nutrients</span>
+            <h3>MOP &amp; SOP Potash</h3>
+            <p>Standard and granular Muriate of Potash (MOP) and low-chloride Sulphate of Potash (SOP) tailored for NPK blending and high-value cash crops.</p>
+            <table class="spec-table">
+              <tr><td>MOP Potassium (K2O)</td><td>60.0% Min</td></tr>
+              <tr><td>SOP Potassium (K2O)</td><td>50.0% Min</td></tr>
+              <tr><td>SOP Chloride Content</td><td>1.0% Max</td></tr>
+              <tr><td>Moisture</td><td>0.5% Max</td></tr>
+            </table>
+          </div>
+          <div class="card-tags">
+            <span class="tag">Pink / White MOP</span>
+            <span class="tag">Granular SOP</span>
+            <span class="tag">Bulk / 50kg Bagged</span>
+          </div>
+        </div>
+
+        <!-- Card 6: Structural & Flat Steel -->
+        <div class="commodity-card" data-category="metals">
+          <div>
+            <span class="commodity-cat">Ferrous Metallurgy</span>
+            <h3>Structural &amp; Flat Steel</h3>
+            <p>Comprehensive mill-certified steel supply for infrastructure, oil &amp; gas pipelines, marine fabrication, and commercial construction.</p>
+            <table class="spec-table">
+              <tr><td>Flat Products</td><td>HR Coils, CR Coils, Steel Plates</td></tr>
+              <tr><td>Tubular &amp; Profiles</td><td>Pipes, Angles, Channels</td></tr>
+              <tr><td>Reinforcement</td><td>Deformed TMT Bars (Fe 500D)</td></tr>
+              <tr><td>Standards</td><td>ASTM / EN / IS / BS</td></tr>
+            </table>
+          </div>
+          <div class="card-tags">
+            <span class="tag">Plates &amp; Coils</span>
+            <span class="tag">Pipes &amp; Angles</span>
+            <span class="tag">TMT Bars</span>
+          </div>
+        </div>
+
+        <!-- Card 7: Base Metals & Iron Ore -->
+        <div class="commodity-card" data-category="metals">
+          <div>
+            <span class="commodity-cat">Non-Ferrous &amp; Ferrous Raw Materials</span>
+            <h3>Copper, Zinc, Aluminum &amp; HBI</h3>
+            <p>Refined non-ferrous ingots/cathodes and high-metallization ferrous feedstocks for foundries, cable manufacturers, and electric arc furnaces.</p>
+            <table class="spec-table">
+              <tr><td>Copper Cathodes</td><td>99.99% Cu (Grade A)</td></tr>
+              <tr><td>Zinc &amp; Aluminum</td><td>SHG Zinc 99.995% • Al 99.7%</td></tr>
+              <tr><td>Ferrous Feedstock</td><td>Iron Ore Fines/Lumps &amp; HBI</td></tr>
+              <tr><td>HBI Total Iron (Fe)</td><td>90.0% Min</td></tr>
+            </table>
+          </div>
+          <div class="card-tags">
+            <span class="tag">Copper &amp; Zinc</span>
+            <span class="tag">Aluminum Ingots</span>
+            <span class="tag">Iron Ore &amp; HBI</span>
+          </div>
+        </div>
+
+        <!-- Card 8: Precious Bullion -->
+        <div class="commodity-card" data-category="metals">
+          <div>
+            <span class="commodity-cat">Precious Metals</span>
+            <h3>Physical Gold &amp; Silver Bullion</h3>
+            <p>Institutional trading of physical Gold and Silver bullion bars with full refinery hallmark certification and secure armored logistics through UAE hubs.</p>
+            <table class="spec-table">
+              <tr><td>Gold Fineness</td><td>995.0 / 999.9 Fine Gold</td></tr>
+              <tr><td>Silver Fineness</td><td>999.0 Fine Silver</td></tr>
+              <tr><td>Standard Denominations</td><td>1 kg Bars / TT Bars / 1000 oz</td></tr>
+              <tr><td>Compliance</td><td>UAE AML / Responsible Sourcing</td></tr>
+            </table>
+          </div>
+          <div class="card-tags">
+            <span class="tag">999.9 Gold Bars</span>
+            <span class="tag">999 Silver Bullion</span>
+            <span class="tag">Assay Certified</span>
+          </div>
+        </div>
+
+        <!-- Card 9: Heavy Machinery & Wind Energy -->
+        <div class="commodity-card" data-category="machinery">
+          <div>
+            <span class="commodity-cat">Capital Equipment &amp; Renewables</span>
+            <h3>Heavy Machinery &amp; Wind Turbines</h3>
+            <p>Sourcing and specialized project-cargo shipping of heavy construction equipment and utility-scale wind energy generation assets.</p>
+            <table class="spec-table">
+              <tr><td>Lifting &amp; Earthmoving</td><td>Mobile Cranes, Excavators, Loaders</td></tr>
+              <tr><td>Wind Power Assets</td><td>Windmill Turbines &amp; Rotor Blades</td></tr>
+              <tr><td>Balance of Plant</td><td>Tower Sections, Nacelles, Spares</td></tr>
+              <tr><td>Logistics Mode</td><td>Ro-Ro &amp; Heavy-Lift Project Vessel</td></tr>
+            </table>
+          </div>
+          <div class="card-tags">
+            <span class="tag">Mobile Cranes</span>
+            <span class="tag">Excavators &amp; Loaders</span>
+            <span class="tag">Windmill Accessories</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Maritime Logistics & Supply Chain Execution -->
+  <section id="logistics" class="logistics-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-kicker" style="color:#7dd3fc;">03 // End-to-End Execution</span>
+        <h2 class="section-title">Maritime Logistics &amp; Chartering Workflow</h2>
+        <p class="section-desc">
+          From producer stockyard to discharge port, Barsana International coordinates every operational milestone with precision.
+        </p>
+      </div>
+
+      <div class="process-grid">
+        <div class="process-step">
+          <span class="step-badge">STAGE 01</span>
+          <h4>Origin Allocation &amp; Mill Audit</h4>
+          <p>We lock in physical tonnage directly with verified refineries, chemical plants, and steel mills, validating batch production schedules and export readiness.</p>
+        </div>
+        <div class="process-step">
+          <span class="step-badge">STAGE 02</span>
+          <h4>Independent Pre-Shipment Assay</h4>
+          <p>Accredited surveyors (SGS / Bureau Veritas / Intertek) conduct sampling, chemical analysis, weight verification, and draft surveys at load port.</p>
+        </div>
+        <div class="process-step">
+          <span class="step-badge">STAGE 03</span>
+          <h4>Vessel Chartering &amp; Stevedoring</h4>
+          <p>Our logistics desk charters dry-bulk vessels, breakbulk coasters, or container blocks, managing port berth scheduling and weather-safe loading.</p>
+        </div>
+        <div class="process-step">
+          <span class="step-badge">STAGE 04</span>
+          <h4>Documentary Clearance &amp; Delivery</h4>
+          <p>Prompt presentation of clean Bills of Lading, Certificates of Origin, and Phytosanitary/Assay certificates for smooth customs clearance at destination.</p>
+        </div>
+      </div>
+
+      <div class="assurance-bar">
+        <div>
+          <h5>Supported International Delivery Terms (Incoterms® 2020)</h5>
+          <p>Flexible contract structures tailored to your port capabilities and banking preferences.</p>
+        </div>
+        <div class="incoterm-badges">
+          <span>FOB (Free On Board)</span>
+          <span>CFR (Cost &amp; Freight)</span>
+          <span>CIF (Cost, Insurance &amp; Freight)</span>
+          <span>DAP (Delivered at Place)</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ / Trading Protocols -->
+  <section id="faq" class="faq-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-kicker">04 // Counterparty Information</span>
+        <h2 class="section-title">Standard Trading Procedures &amp; FAQs</h2>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item open">
+          <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+            <span>What minimum order quantities (MOQ) does Barsana International handle?</span>
+            <span class="icon">+</span>
+          </button>
+          <div class="faq-a">
+            For containerized industrial chemicals, fertilizers, and non-ferrous metals, our typical minimum lot starts at 500 MT (20x 20' FCL). For dry-bulk commodities such as Natural Gypsum, Sulphur, Bulk Urea, and Iron Ore, we handle vessel parcels ranging from 5,000 MT to 50,000+ MT Supramax cargoes.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+            <span>How is product quality guaranteed prior to shipment?</span>
+            <span class="icon">+</span>
+          </button>
+          <div class="faq-a">
+            Every contract includes mandatory independent inspection at the port of loading by SGS, Bureau Veritas, or Intertek. Certificate of Quality (CoQ) and Certificate of Weight (CoW) issued at load port form an integral part of our shipping documentation.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+            <span>Which payment instruments and banking structures are accepted?</span>
+            <span class="icon">+</span>
+          </button>
+          <div class="faq-a">
+            We transact via irrevocable, confirmed Documentary Letters of Credit (DLC) payable at sight from prime international banks, Standby Letters of Credit (SBLC), and TT wire transfers against shipping documents depending on counterparty track record.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+            <span>Can Barsana supply customized packaging for Urea, Sulphur, and Fertilizers?</span>
+            <span class="icon">+</span>
+          </button>
+          <div class="faq-a">
+            Yes. In addition to loose bulk vessel shipments, we supply 50 kg woven PP bags with PE inner liners, 1,000 kg / 1,250 kg UV-stabilized Jumbo Bags with lifting loops, and neutral or buyer-specified export markings.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Trade Inquiry Desk -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="office-card">
+          <h3>Corporate Headquarters</h3>
+          <span class="sub">Barsana International LLC • UAE</span>
+          <div class="info-list">
+            <div class="info-row">
+              <strong>Registered Office</strong>
+              <span>Sharjah Media City (Shams)<br/>Sharjah, United Arab Emirates</span>
+            </div>
+            <div class="info-row">
+              <strong>Executive Contact</strong>
+              <span>Mr. Amit Vora</span>
+            </div>
+            <div class="info-row">
+              <strong>Official Trade Desk Email</strong>
+              <a href="mailto:trade@barsanaintl.com">trade@barsanaintl.com</a>
+            </div>
+            <div class="info-row">
+              <strong>Core Operating Corridors</strong>
+              <span>UAE • GCC • India • East Africa • Southeast Asia • Europe</span>
+            </div>
+          </div>
+          <div style="display:flex; gap:0.75rem; padding-top:1.5rem; border-top:1px solid rgba(255,255,255,0.12);">
+            <a href="https://www.linkedin.com/company/barsana-international" target="_blank" rel="noopener" class="btn-hero-secondary" style="padding:0.6rem 1.1rem; font-size:0.82rem;">LinkedIn Profile</a>
+            <a href="https://www.instagram.com/barsanaintl/" target="_blank" rel="noopener" class="btn-hero-secondary" style="padding:0.6rem 1.1rem; font-size:0.82rem;">Instagram</a>
+          </div>
+        </div>
+
+        <form class="rfq-form" onsubmit="event.preventDefault(); window.location.href='mailto:trade@barsanaintl.com?subject=' + encodeURIComponent('RFQ: ' + document.getElementById('rfqCommodity').value + ' - ' + document.getElementById('rfqCompany').value) + '&body=' + encodeURIComponent('Company: ' + document.getElementById('rfqCompany').value + '\nContact Name: ' + document.getElementById('rfqName').value + '\nEmail: ' + document.getElementById('rfqEmail').value + '\nCommodity: ' + document.getElementById('rfqCommodity').value + '\nQuantity & Destination Port: ' + document.getElementById('rfqPort').value + '\n\nDetails:\n' + document.getElementById('rfqNotes').value);">
+          <h3>Submit a Formal Trade Inquiry (LOI / RFQ)</h3>
+          <p>Direct inquiry routing to our Sharjah commodity desk. Please specify target tonnage, packaging, and destination port.</p>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Full Name *</label>
+              <input type="text" id="rfqName" placeholder="e.g. Rajesh Mehta" required />
+            </div>
+            <div class="form-group">
+              <label>Company / Organization *</label>
+              <input type="text" id="rfqCompany" placeholder="Company Name Ltd." required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Corporate Email *</label>
+              <input type="email" id="rfqEmail" placeholder="name@company.com" required />
+            </div>
+            <div class="form-group">
+              <label>Commodity Division *</label>
+              <select id="rfqCommodity">
+                <option value="Technical Grade Urea 46% N">Technical Grade Urea 46% N</option>
+                <option value="Sulphur (Granular / Lumps)">Sulphur (Granular / Lumps)</option>
+                <option value="Natural Gypsum / Soda Ash">Natural Gypsum / Soda Ash</option>
+                <option value="Fertilizers (DAP / MAP / MOP / SOP / CAN)">Fertilizers (DAP / MAP / MOP / SOP / CAN)</option>
+                <option value="Steel Products (Plates / Coils / Pipes / TMT)">Steel Products (Plates / Coils / Pipes / TMT)</option>
+                <option value="Base Metals (Copper / Zinc / Aluminum / HBI)">Base Metals (Copper / Zinc / Aluminum / HBI)</option>
+                <option value="Physical Gold & Silver Bullion">Physical Gold &amp; Silver Bullion</option>
+                <option value="Heavy Machinery & Windmill Equipment">Heavy Machinery &amp; Windmill Equipment</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Target Quantity, Incoterms &amp; Destination Port *</label>
+            <input type="text" id="rfqPort" placeholder="e.g. 5,000 MT CIF Mundra / Jebel Ali — 1MT Jumbo Bags" required />
+          </div>
+          <div class="form-group">
+            <label>Technical Specifications &amp; Payment Terms</label>
+            <textarea id="rfqNotes" rows="3" placeholder="Specify grade requirements, shipment schedule, or LC terms..."></textarea>
+          </div>
+          <button type="submit" class="btn-primary" style="width:100%; justify-content:center; padding:0.9rem; cursor:pointer;">Transmit Trade Inquiry to trade@barsanaintl.com →</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img src="barsana-logo.png" alt="Barsana International LLC" />
+          <div>
+            <h4>BARSANA INTERNATIONAL LLC</h4>
+            <p>Sharjah Media City, Sharjah – UAE | trade@barsanaintl.com</p>
+          </div>
+        </div>
+        <div style="display:flex; gap:1.5rem; flex-wrap:wrap; font-size:0.88rem;">
+          <a href="#mandate" style="color:rgba(255,255,255,0.75); text-decoration:none;">Corporate Profile</a>
+          <a href="#commodities" style="color:rgba(255,255,255,0.75); text-decoration:none;">Commodities</a>
+          <a href="#logistics" style="color:rgba(255,255,255,0.75); text-decoration:none;">Maritime Logistics</a>
+          <a href="https://www.linkedin.com/company/barsana-international" target="_blank" rel="noopener" style="color:#7dd3fc; text-decoration:none;">LinkedIn</a>
+          <a href="https://www.instagram.com/barsanaintl/" target="_blank" rel="noopener" style="color:#7dd3fc; text-decoration:none;">Instagram</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Barsana International LLC. All Rights Reserved.</span>
+        <span>Importers • Maritime Logistics • Global Commodity Traders</span>
       </div>
     </div>
   </footer>
 
-  <!-- Consultation / Trade Inquiry Modal -->
-  <div class="modal-backdrop" id="consultModal" onclick="closeModalOnBackdrop(event)">
-    <div class="modal-card">
-      <button class="modal-close" onclick="closeConsultation()">✕</button>
-      <div style="font-size:11px; font-weight:800; color:var(--accent-indigo); text-transform:uppercase; letter-spacing:1.5px; margin-bottom:6px;">
-        Barsana International LLC
-      </div>
-      <h3 style="font-size:24px; font-weight:800; margin-bottom:8px;" id="modalHeading">
-        Global Trade Inquiry
-      </h3>
-      <p style="font-size:13.5px; color:var(--text-muted); margin-bottom:24px;">
-        Directly routed to our Sharjah Media City, UAE commodity &amp; logistics desk.
-      </p>
-
-      <form onsubmit="handleInquiry(event)">
-        <div class="form-group">
-          <label class="form-label">Full Name / Company</label>
-          <input type="text" class="form-input" id="client-name" placeholder="Your Name & Company" required>
-        </div>
-        <div class="form-group">
-          <label class="form-label">Phone / WhatsApp</label>
-          <input type="tel" class="form-input" id="client-phone" placeholder="+971 / +91 XXXXX XXXXX" required>
-        </div>
-        <div class="form-group">
-          <label class="form-label">Email Address</label>
-          <input type="email" class="form-input" id="client-email" placeholder="name@company.com" required>
-        </div>
-        <div class="form-group">
-          <label class="form-label">Commodity / Service of Interest</label>
-          <select class="form-select" id="client-interest">
-            <option>Technical Grade Urea (46% N)</option>
-            <option>Sulphur, Natural Gypsum &amp; Soda Ash</option>
-            <option>Fertilizers (DAP, MAP, MOP, SOP, CAN)</option>
-            <option>Base Metals (Copper, Zinc, Aluminum, Lead)</option>
-            <option>Ferrous Metals (Iron Ore, HBI) &amp; Steel</option>
-            <option>Precious Metals (Physical Gold &amp; Silver)</option>
-            <option>Heavy Machinery &amp; Windmill Sourcing</option>
-          </select>
-        </div>
-
-        <button type="submit" class="btn-dark-pill" style="width:100%; justify-content:center; margin-top:10px; padding:15px;">
-          Dispatch Trade Inquiry
-        </button>
-      </form>
-    </div>
-  </div>
-
   <script>
-    function activateIsoStep(index) {
-      document.querySelectorAll('.iso-step-block').forEach((el, i) => {
-        el.classList.toggle('active', i === index);
-      });
-      document.querySelectorAll('.iso-graphic-layer').forEach((el, i) => {
-        el.classList.toggle('active', i === index);
-      });
-    }
-
-    function activatePhoneSlide(index) {
-      document.querySelectorAll('.narrative-block').forEach((el, i) => {
-        el.classList.toggle('active', i === index);
-      });
-      document.querySelectorAll('.phone-screen-slide').forEach((el, i) => {
-        el.classList.toggle('active', i === index);
-      });
-      document.querySelectorAll('.rail-dot').forEach((el, i) => {
-        el.classList.toggle('active', i === index);
-      });
-    }
-
-    window.addEventListener('scroll', () => {
-      const vh = window.innerHeight;
-      document.querySelectorAll('.iso-step-block').forEach((block, idx) => {
-        const rect = block.getBoundingClientRect();
-        if (rect.top < vh * 0.62 && rect.bottom > vh * 0.25) {
-          activateIsoStep(idx);
+    function filterCards(category, btn) {
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      document.querySelectorAll('.commodity-card').forEach(card => {
+        if (category === 'all' || card.dataset.category === category) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
         }
       });
-      document.querySelectorAll('.narrative-block').forEach((block, idx) => {
-        const rect = block.getBoundingClientRect();
-        if (rect.top < vh * 0.62 && rect.bottom > vh * 0.25) {
-          activatePhoneSlide(idx);
-        }
-      });
-    });
-
-    function toggleAccordion(item) {
-      const isOpen = item.classList.contains('open');
-      document.querySelectorAll('.acc-item').forEach(el => el.classList.remove('open'));
-      if (!isOpen) item.classList.add('open');
-    }
-
-    function openConsultation(mandate) {
-      document.getElementById('consultModal').classList.add('active');
-      if (mandate) document.getElementById('modalHeading').innerText = mandate;
-    }
-    function closeConsultation() {
-      document.getElementById('consultModal').classList.remove('active');
-    }
-    function closeModalOnBackdrop(e) {
-      if (e.target.id === 'consultModal') closeConsultation();
-    }
-    function handleInquiry(e) {
-      e.preventDefault();
-      const name = document.getElementById('client-name').value;
-      const phone = document.getElementById('client-phone').value;
-      const email = document.getElementById('client-email').value;
-      const service = document.getElementById('client-interest').value;
-
-      const subject = encodeURIComponent(`Trade Inquiry: ${service} — ${name}`);
-      const body = encodeURIComponent(`Hello Barsana International Trade Desk,\n\nI would like to inquire about:\n\nName / Company: ${name}\nPhone: ${phone}\nEmail: ${email}\nCommodity / Service: ${service}\n\nPlease share specifications and availability.`);
-      window.location.href = `mailto:trade@barsanaintl.com?subject=${subject}&body=${body}`;
-      closeConsultation();
     }
   </script>
 </body>
