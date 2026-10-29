@@ -3,79 +3,67 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <title>Barsana International LLC — Immersive Global Commodity Trading &amp; Maritime Logistics</title>
-  <meta name="description" content="Barsana International LLC (Sharjah Media City, UAE) — Immersive, specification-grade physical commodity trading and bulk maritime logistics across the Middle East, India, Africa, and Europe." />
+  <title>Barsana International LLC — Global Commodity Trading &amp; Maritime Logistics | UAE</title>
+  <meta name="description" content="Barsana International LLC (Sharjah Media City, UAE) — Premier international trading house and bulk vessel charterer specializing in industrial chemicals, fertilizers, steel, non-ferrous metals, bullion, and heavy machinery." />
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
   <style>
     :root {
-      --bg-void: #02050c;
-      --bg-sub: #050a14;
-      --bg-card: rgba(8, 16, 32, 0.58);
-      --ice-glow: #9fd0ff;
-      --ice-muted: #93a6ba;
-      --azure-core: #0ea5e9;
-      --azure-deep: #0284c7;
-      --text-pri: #e8f0ff;
-      --text-sec: rgba(223, 234, 255, 0.68);
-      --text-dim: rgba(223, 234, 255, 0.42);
-      --line-subtle: rgba(223, 234, 255, 0.08);
-      --line-bright: rgba(159, 208, 255, 0.22);
-      --font-display: 'Plus Jakarta Sans', system-ui, sans-serif;
-      --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+      --bg-canvas: #f8fafc;
+      --bg-white: #ffffff;
+      --bg-card: rgba(255, 255, 255, 0.88);
+      --azure-core: #0284c7;
+      --azure-bright: #0ea5e9;
+      --azure-soft: #e0f2fe;
+      --azure-tint: #f0f9ff;
+      --text-main: #0a1120;
+      --text-body: #334155;
+      --text-muted: #64748b;
+      --line-subtle: rgba(15, 23, 42, 0.08);
+      --line-bright: rgba(2, 132, 199, 0.22);
+      --font-display: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
     html {
       scroll-behavior: smooth;
-      background-color: var(--bg-void);
-      color: var(--text-pri);
+      background-color: var(--bg-canvas);
+      color: var(--text-main);
       font-family: var(--font-display);
       -webkit-font-smoothing: antialiased;
       overflow-x: hidden;
     }
 
-    /* Ambient cursor spotlight */
-    #ambient-light {
-      position: fixed;
-      width: 700px;
-      height: 700px;
-      border-radius: 50%;
-      background: radial-gradient(circle, rgba(14, 165, 233, 0.12) 0%, rgba(2, 5, 12, 0) 70%);
-      pointer-events: none;
-      transform: translate(-50%, -50%);
-      z-index: 1;
-      transition: opacity 0.3s ease;
-    }
-
-    /* Ambient Noise / Scanlines Grid */
-    .cosmic-canvas {
+    /* Ambient Diffused Light Glow */
+    .ambient-canvas {
       position: fixed;
       inset: 0;
       background-image: 
-        radial-gradient(circle at 50% 0%, rgba(15, 34, 64, 0.35) 0%, transparent 65%),
-        linear-gradient(to right, rgba(255, 255, 255, 0.015) 1px, transparent 1px),
-        linear-gradient(to bottom, rgba(255, 255, 255, 0.015) 1px, transparent 1px);
-      background-size: 100% 100%, 72px 72px, 72px 72px;
+        radial-gradient(circle at 80% 12%, rgba(14, 165, 233, 0.08) 0%, transparent 50%),
+        radial-gradient(circle at 15% 45%, rgba(2, 132, 199, 0.05) 0%, transparent 45%),
+        linear-gradient(to right, rgba(15, 23, 42, 0.02) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(15, 23, 42, 0.02) 1px, transparent 1px);
+      background-size: 100% 100%, 100% 100%, 64px 64px, 64px 64px;
       pointer-events: none;
       z-index: 0;
     }
 
     .container {
-      max-width: 1360px;
+      max-width: 1340px;
       margin: 0 auto;
       padding: 0 clamp(1.2rem, 3.5vw, 3rem);
       position: relative;
       z-index: 2;
     }
 
-    /* Floating Capsule Header */
+    /* Floating Luminous Capsule Header */
     .capsule-header {
       position: fixed;
-      top: clamp(1rem, 2.5vh, 2rem);
+      top: clamp(1rem, 2.5vh, 1.8rem);
       left: 0;
       right: 0;
       z-index: 100;
@@ -85,94 +73,96 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background: rgba(4, 9, 20, 0.72);
-      backdrop-filter: blur(24px);
-      -webkit-backdrop-filter: blur(24px);
-      border: 1px solid var(--line-bright);
+      background: rgba(255, 255, 255, 0.88);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(15, 23, 42, 0.08);
       border-radius: 999px;
       padding: 0.6rem 1.4rem;
       pointer-events: auto;
-      box-shadow: 0 20px 45px -15px rgba(0, 0, 0, 0.8), 0 0 30px -10px rgba(14, 165, 233, 0.2);
+      box-shadow: 0 16px 38px -12px rgba(10, 20, 40, 0.08), 0 0 0 1px rgba(255, 255, 255, 0.8);
     }
     .brand-wrap {
       display: flex;
       align-items: center;
       gap: 0.9rem;
       text-decoration: none;
-      color: var(--text-pri);
     }
     .brand-wrap img {
       width: 44px;
       height: 44px;
       border-radius: 50%;
-      background: var(--bg-void);
-      border: 1px solid var(--line-bright);
+      background: #ffffff;
+      border: 1px solid var(--line-subtle);
       object-fit: contain;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
     }
     .brand-meta {
       display: flex;
       flex-direction: column;
     }
     .brand-name {
-      font-size: 0.95rem;
+      font-size: 0.96rem;
       font-weight: 700;
       letter-spacing: -0.02em;
-      color: #ffffff;
+      color: var(--text-main);
       line-height: 1.1;
     }
     .brand-tag {
       font-family: var(--font-mono);
-      font-size: 0.64rem;
+      font-size: 0.65rem;
       letter-spacing: 0.16em;
       text-transform: uppercase;
-      color: var(--ice-glow);
+      color: var(--azure-core);
+      font-weight: 600;
     }
 
     .nav-items {
       display: flex;
       align-items: center;
-      gap: 2rem;
+      gap: 2.2rem;
     }
     .nav-items a {
-      font-size: 0.82rem;
-      font-weight: 500;
-      color: var(--text-sec);
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text-body);
       text-decoration: none;
       letter-spacing: -0.01em;
       transition: color 0.2s;
     }
     .nav-items a:hover {
-      color: var(--ice-glow);
+      color: var(--azure-core);
     }
     .nav-cta {
-      background: linear-gradient(135deg, rgba(14, 165, 233, 0.22), rgba(2, 132, 199, 0.35));
-      border: 1px solid var(--line-bright);
-      color: var(--text-pri);
-      padding: 0.55rem 1.25rem;
+      background: var(--text-main);
+      border: 1px solid var(--text-main);
+      color: #ffffff;
+      padding: 0.6rem 1.35rem;
       border-radius: 999px;
-      font-size: 0.78rem;
+      font-size: 0.82rem;
       font-weight: 600;
       text-decoration: none;
       transition: all 0.25s;
       display: inline-flex;
       align-items: center;
-      gap: 0.45rem;
+      gap: 0.5rem;
+      box-shadow: 0 4px 14px rgba(10, 17, 32, 0.15);
     }
     .nav-cta:hover {
-      background: rgba(14, 165, 233, 0.45);
-      border-color: var(--ice-glow);
-      box-shadow: 0 0 20px rgba(14, 165, 233, 0.4);
+      background: var(--azure-core);
+      border-color: var(--azure-core);
       transform: translateY(-1px);
+      box-shadow: 0 8px 20px rgba(2, 132, 199, 0.25);
     }
 
-    /* Hero: Monolithic, Atmospheric, Minimalist */
+    /* Light, Editorial, High-Impact Hero */
     .hero {
-      min-height: 96vh;
+      min-height: 94vh;
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
-      padding-bottom: clamp(3rem, 7vh, 6rem);
-      padding-top: 130px;
+      padding-bottom: clamp(3.5rem, 8vh, 6.5rem);
+      padding-top: 135px;
       position: relative;
     }
     .hero-hud {
@@ -183,95 +173,100 @@
       border-bottom: 1px solid var(--line-subtle);
       margin-bottom: 2.5rem;
       font-family: var(--font-mono);
-      font-size: 0.68rem;
+      font-size: 0.72rem;
       letter-spacing: 0.18em;
       text-transform: uppercase;
-      color: var(--ice-muted);
+      color: var(--text-muted);
+    }
+    .pulse-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--azure-core);
+      display: inline-block;
+      margin-right: 0.45rem;
+      box-shadow: 0 0 8px var(--azure-bright);
     }
     .hero-hud-right {
       display: flex;
       align-items: center;
-      gap: 1.5rem;
+      gap: 1.8rem;
     }
-    .pulse-pip {
-      width: 7px;
-      height: 7px;
-      border-radius: 50%;
-      background: #38bdf8;
-      box-shadow: 0 0 12px #38bdf8;
-      display: inline-block;
-      margin-right: 0.4rem;
-    }
-    
-    .hero-headline {
-      font-size: clamp(2.8rem, 7.2vw, 6.8rem);
+
+    .hero-title {
+      font-size: clamp(2.9rem, 7vw, 6.6rem);
       font-weight: 800;
       letter-spacing: -0.045em;
-      line-height: 0.94;
+      line-height: 0.95;
       text-transform: uppercase;
-      margin-bottom: 2.2rem;
-      max-width: 18ch;
-      color: #ffffff;
+      margin-bottom: 2.5rem;
+      max-width: 17ch;
+      color: var(--text-main);
       text-wrap: balance;
     }
-    .hero-headline span.ghost {
-      color: transparent;
-      -webkit-text-stroke: 1px rgba(223, 234, 255, 0.35);
-    }
-    .hero-headline span.accent {
-      background: linear-gradient(135deg, #e0f2fe 10%, #7dd3fc 60%, #0284c7 100%);
+    .hero-title span.accent {
+      background: linear-gradient(135deg, var(--azure-core) 0%, #0369a1 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
+    .hero-title span.outline {
+      color: transparent;
+      -webkit-text-stroke: 1.5px rgba(10, 17, 32, 0.28);
+    }
 
-    .hero-bottom-grid {
+    .hero-grid {
       display: grid;
       grid-template-columns: 1.2fr 0.8fr;
       gap: 4rem;
       align-items: flex-end;
     }
     .hero-lead {
-      font-size: clamp(1.05rem, 1.4vw, 1.25rem);
-      line-height: 1.6;
-      color: var(--text-sec);
+      font-size: clamp(1.1rem, 1.4vw, 1.3rem);
+      line-height: 1.65;
+      color: var(--text-body);
       max-width: 620px;
     }
-    .hero-telemetry-box {
-      background: var(--bg-card);
-      border: 1px solid var(--line-bright);
+    .hero-lead strong {
+      color: var(--text-main);
+      font-weight: 700;
+    }
+
+    .telemetry-card {
+      background: var(--bg-white);
+      border: 1px solid var(--line-subtle);
       border-radius: 18px;
-      padding: 1.8rem;
-      backdrop-filter: blur(16px);
-      box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.7);
+      padding: 2rem;
+      box-shadow: 0 20px 45px -15px rgba(10, 20, 40, 0.08);
     }
     .telem-row {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 0.65rem 0;
-      border-bottom: 1px solid var(--line-subtle);
-      font-size: 0.82rem;
+      padding: 0.75rem 0;
+      border-bottom: 1px solid rgba(15, 23, 42, 0.06);
+      font-size: 0.86rem;
     }
     .telem-row:last-child { border-bottom: none; }
     .telem-label {
       font-family: var(--font-mono);
-      font-size: 0.7rem;
-      color: var(--ice-muted);
+      font-size: 0.72rem;
+      color: var(--text-muted);
       text-transform: uppercase;
       letter-spacing: 0.12em;
     }
     .telem-val {
       font-family: var(--font-mono);
-      color: var(--ice-glow);
       font-weight: 600;
+      color: var(--azure-core);
+      font-size: 0.84rem;
     }
 
-    /* Global Horizontal Ticker */
+    /* Clean Infinite Telemetry Stream */
     .infinite-ticker {
       border-top: 1px solid var(--line-subtle);
       border-bottom: 1px solid var(--line-subtle);
-      background: rgba(2, 6, 15, 0.85);
-      padding: 0.85rem 0;
+      background: var(--bg-white);
+      padding: 0.95rem 0;
       overflow: hidden;
       white-space: nowrap;
     }
@@ -279,10 +274,10 @@
       display: inline-block;
       animation: tickerRun 45s linear infinite;
       font-family: var(--font-mono);
-      font-size: 0.72rem;
-      letter-spacing: 0.2em;
+      font-size: 0.74rem;
+      letter-spacing: 0.18em;
       text-transform: uppercase;
-      color: var(--ice-muted);
+      color: var(--text-muted);
     }
     .ticker-stream span {
       margin: 0 2rem;
@@ -291,37 +286,38 @@
       gap: 0.5rem;
     }
     .ticker-stream b {
-      color: var(--ice-glow);
+      color: var(--azure-core);
     }
     @keyframes tickerRun {
       0% { transform: translateX(0); }
       100% { transform: translateX(-50%); }
     }
 
-    /* Spatial Chapter Layouts */
+    /* Chapters & Sections */
     section {
-      padding: clamp(5rem, 12vh, 9rem) 0;
+      padding: clamp(5rem, 11vh, 8.5rem) 0;
       position: relative;
     }
     .section-kicker {
       font-family: var(--font-mono);
-      font-size: 0.72rem;
+      font-size: 0.74rem;
       letter-spacing: 0.22em;
       text-transform: uppercase;
-      color: var(--ice-muted);
+      color: var(--azure-core);
+      font-weight: 600;
       display: block;
       margin-bottom: 0.85rem;
     }
     .section-title {
-      font-size: clamp(2.2rem, 4.4vw, 4rem);
-      font-weight: 700;
+      font-size: clamp(2.3rem, 4.4vw, 4.1rem);
+      font-weight: 800;
       letter-spacing: -0.035em;
       line-height: 1.05;
-      color: #ffffff;
-      margin-bottom: 1.5rem;
+      color: var(--text-main);
+      margin-bottom: 1.25rem;
     }
 
-    /* Interactive Spatial Commodity Exhibit (Samana-style Cursor Reveal) */
+    /* Clean Spatial Commodity Exhibit (Hover reveal with cursor) */
     .exhibit-list {
       margin-top: 3.5rem;
       border-top: 1px solid var(--line-subtle);
@@ -333,59 +329,62 @@
       padding: 2.2rem 1.5rem;
       border-bottom: 1px solid var(--line-subtle);
       text-decoration: none;
-      color: var(--text-pri);
-      transition: all 0.3s ease;
-      position: relative;
+      color: var(--text-main);
+      transition: all 0.25s ease;
       cursor: pointer;
+      background: transparent;
     }
     .exhibit-item:hover {
-      background: rgba(14, 165, 233, 0.04);
+      background: var(--bg-white);
       padding-left: 2rem;
+      box-shadow: 0 10px 30px rgba(10, 20, 40, 0.04);
     }
     .exhibit-index {
       font-family: var(--font-mono);
-      font-size: 0.8rem;
-      color: var(--ice-muted);
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      font-weight: 500;
     }
     .exhibit-name {
       font-size: clamp(1.3rem, 2vw, 1.85rem);
-      font-weight: 600;
+      font-weight: 700;
       letter-spacing: -0.025em;
-      color: #ffffff;
+      color: var(--text-main);
       transition: color 0.2s;
     }
     .exhibit-item:hover .exhibit-name {
-      color: var(--ice-glow);
+      color: var(--azure-core);
     }
     .exhibit-specs {
       font-family: var(--font-mono);
       font-size: 0.78rem;
-      color: var(--text-sec);
-      letter-spacing: 0.05em;
+      color: var(--text-body);
+      letter-spacing: 0.02em;
     }
     .exhibit-action {
       text-align: right;
       font-family: var(--font-mono);
-      font-size: 0.75rem;
+      font-size: 0.78rem;
       letter-spacing: 0.14em;
       text-transform: uppercase;
-      color: var(--ice-glow);
+      color: var(--azure-core);
+      font-weight: 700;
     }
 
-    /* Interactive Photo Preview Window */
+    /* Floating Image Preview Modal */
     .preview-modal {
       display: none;
       position: fixed;
-      width: 380px;
-      height: 240px;
-      border-radius: 14px;
+      width: 360px;
+      height: 230px;
+      border-radius: 16px;
       overflow: hidden;
-      border: 1px solid var(--line-bright);
-      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.9);
+      border: 1px solid var(--line-subtle);
+      box-shadow: 0 25px 60px rgba(10, 20, 40, 0.18);
       pointer-events: none;
       z-index: 50;
       transform: translate(-50%, -50%);
-      transition: opacity 0.2s ease;
+      background: var(--bg-white);
     }
     .preview-modal img {
       width: 100%;
@@ -393,7 +392,7 @@
       object-fit: cover;
     }
 
-    /* Maritime Infrastructure: 4 Monolithic Telemetry Blocks */
+    /* Maritime Infrastructure Grid: Clean Crisp Cards */
     .infra-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -401,54 +400,44 @@
       margin-top: 3.5rem;
     }
     .infra-card {
-      background: var(--bg-card);
+      background: var(--bg-white);
       border: 1px solid var(--line-subtle);
-      border-radius: 16px;
-      padding: 2.2rem 1.8rem;
-      backdrop-filter: blur(14px);
-      transition: all 0.35s ease;
+      border-radius: 18px;
+      padding: 2.4rem 2rem;
+      box-shadow: 0 10px 30px rgba(10, 20, 40, 0.04);
+      transition: all 0.3s ease;
       position: relative;
-      overflow: hidden;
-    }
-    .infra-card::before {
-      content: "";
-      position: absolute;
-      top: 0; left: 0; right: 0;
-      height: 2px;
-      background: linear-gradient(90deg, transparent, var(--azure-core), transparent);
-      opacity: 0;
-      transition: opacity 0.35s ease;
     }
     .infra-card:hover {
       border-color: var(--line-bright);
       transform: translateY(-6px);
-      box-shadow: 0 25px 50px -15px rgba(2, 132, 199, 0.25);
+      box-shadow: 0 25px 45px -15px rgba(2, 132, 199, 0.15);
     }
-    .infra-card:hover::before { opacity: 1; }
     .infra-num {
       font-family: var(--font-mono);
-      font-size: 0.72rem;
-      color: var(--ice-glow);
+      font-size: 0.74rem;
+      color: var(--azure-core);
+      font-weight: 700;
       letter-spacing: 0.18em;
-      margin-bottom: 1.4rem;
+      margin-bottom: 1.25rem;
       display: block;
     }
     .infra-card h3 {
-      font-size: 1.35rem;
-      font-weight: 600;
+      font-size: 1.4rem;
+      font-weight: 700;
       letter-spacing: -0.02em;
       margin-bottom: 0.85rem;
-      color: #ffffff;
+      color: var(--text-main);
     }
     .infra-card p {
-      font-size: 0.88rem;
-      color: var(--text-sec);
+      font-size: 0.92rem;
+      color: var(--text-body);
       line-height: 1.65;
     }
 
-    /* Interactive Desk / Terminal RFQ Form */
+    /* Clean Corporate Terminal / RFQ Desk */
     .terminal-section {
-      background: linear-gradient(180deg, var(--bg-void) 0%, #030814 100%);
+      background: var(--bg-white);
       border-top: 1px solid var(--line-subtle);
     }
     .terminal-grid {
@@ -458,12 +447,11 @@
       align-items: flex-start;
     }
     .terminal-panel {
-      background: rgba(5, 11, 24, 0.75);
-      border: 1px solid var(--line-bright);
-      border-radius: 20px;
+      background: var(--bg-canvas);
+      border: 1px solid var(--line-subtle);
+      border-radius: 22px;
       padding: clamp(2rem, 4vw, 3rem);
-      backdrop-filter: blur(20px);
-      box-shadow: 0 30px 70px -20px rgba(0, 0, 0, 0.8);
+      box-shadow: 0 20px 45px -15px rgba(10, 20, 40, 0.06);
     }
     .input-row {
       display: grid;
@@ -477,19 +465,20 @@
     .input-field label {
       display: block;
       font-family: var(--font-mono);
-      font-size: 0.68rem;
-      letter-spacing: 0.16em;
+      font-size: 0.72rem;
+      letter-spacing: 0.14em;
       text-transform: uppercase;
-      color: var(--ice-muted);
+      color: var(--text-muted);
+      font-weight: 600;
       margin-bottom: 0.5rem;
     }
     .input-field input, .input-field select, .input-field textarea {
       width: 100%;
-      background: rgba(2, 6, 16, 0.8);
+      background: #ffffff;
       border: 1px solid var(--line-subtle);
       border-radius: 10px;
-      padding: 0.85rem 1rem;
-      color: #ffffff;
+      padding: 0.9rem 1.05rem;
+      color: var(--text-main);
       font-family: var(--font-display);
       font-size: 0.92rem;
       outline: none;
@@ -497,18 +486,17 @@
     }
     .input-field input:focus, .input-field select:focus, .input-field textarea:focus {
       border-color: var(--azure-core);
-      box-shadow: 0 0 20px rgba(14, 165, 233, 0.25);
-      background: rgba(4, 10, 24, 0.95);
+      box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.12);
     }
 
-    /* Monolithic Footer */
+    /* Clean Editorial Footer */
     .site-footer {
       border-top: 1px solid var(--line-subtle);
-      padding: 5rem 0 3rem;
-      background: #010307;
+      padding: 5rem 0 3.5rem;
+      background: var(--bg-canvas);
       font-family: var(--font-mono);
-      font-size: 0.74rem;
-      color: var(--text-dim);
+      font-size: 0.78rem;
+      color: var(--text-muted);
     }
     .footer-top {
       display: flex;
@@ -520,17 +508,17 @@
     }
     .footer-huge-name {
       font-family: var(--font-display);
-      font-size: clamp(2.5rem, 6vw, 5.5rem);
+      font-size: clamp(2.8rem, 7vw, 6.5rem);
       font-weight: 800;
       letter-spacing: -0.04em;
-      color: rgba(255, 255, 255, 0.08);
+      color: rgba(10, 17, 32, 0.06);
       line-height: 0.9;
       text-transform: uppercase;
       margin-top: 1rem;
     }
 
     @media (max-width: 1024px) {
-      .hero-bottom-grid, .terminal-grid { grid-template-columns: 1fr; }
+      .hero-grid, .terminal-grid { grid-template-columns: 1fr; }
       .infra-grid { grid-template-columns: repeat(2, 1fr); }
       .exhibit-item { grid-template-columns: 50px 1.5fr 1fr; }
       .exhibit-specs { display: none; }
@@ -543,10 +531,9 @@
 </head>
 <body>
 
-  <div id="ambient-light"></div>
-  <div class="cosmic-canvas"></div>
+  <div class="ambient-canvas"></div>
 
-  <!-- Floating Samana Capsule Header -->
+  <!-- Floating Capsule Header -->
   <header class="capsule-header">
     <div class="container">
       <div class="capsule-inner">
@@ -578,7 +565,7 @@
     <div class="container">
       <div class="hero-hud">
         <div>
-          <span class="pulse-pip"></span>
+          <span class="pulse-dot"></span>
           <span>SYSTEM // GLOBAL COMMODITY LOGISTICS</span>
         </div>
         <div class="hero-hud-right">
@@ -588,18 +575,18 @@
         </div>
       </div>
 
-      <h1 class="hero-headline">
+      <h1 class="hero-title">
         Physical supply. <br />
         <span class="accent">Global allocation.</span> <br />
-        <span class="ghost">Maritime rigor.</span>
+        <span class="outline">Maritime rigor.</span>
       </h1>
 
-      <div class="hero-bottom-grid">
+      <div class="hero-grid">
         <p class="hero-lead">
-          Headquartered in <strong>Sharjah Media City, UAE</strong>, Barsana International LLC executes off-take, bulk vessel chartering, and specification-grade physical supply of industrial chemicals, agricultural fertilizers, prime steel, non-ferrous metals, and heavy machinery.
+          Headquartered in <strong>Sharjah Media City, UAE</strong>, Barsana International LLC executes off-take, bulk vessel chartering, and specification-grade physical supply of industrial chemicals, fertilizers, prime steel, non-ferrous metals, and heavy machinery.
         </p>
 
-        <div class="hero-telemetry-box">
+        <div class="telemetry-card">
           <div class="telem-row">
             <span class="telem-label">Primary Cargo Modes</span>
             <span class="telem-val">Handysize • Supramax • FCL Blocks</span>
@@ -646,7 +633,7 @@
     <div class="container">
       <span class="section-kicker">[01] // PHYSICAL COMMODITY PORTFOLIO</span>
       <h2 class="section-title">Nine Core Specification Divisions</h2>
-      <p style="color:var(--text-sec); max-width:620px; font-size:1.05rem;">
+      <p style="color:var(--text-body); max-width:640px; font-size:1.05rem;">
         Hover any commodity vertical to inspect chemical assays, international packaging configurations, and load-port assay benchmarks.
       </p>
 
@@ -732,7 +719,7 @@
   </div>
 
   <!-- Chapter 02: Vessel Chartering & Governance -->
-  <section id="charter" style="border-top:1px solid var(--line-subtle);">
+  <section id="charter" style="border-top:1px solid var(--line-subtle); background:var(--bg-white);">
     <div class="container">
       <span class="section-kicker">[02] // MARITIME LOGISTICS &amp; CHARTERING</span>
       <h2 class="section-title">Port Berth to Discharge Delivery</h2>
@@ -769,22 +756,22 @@
         <div>
           <span class="section-kicker">[03] // COUNTERPARTY TRADE DESK</span>
           <h2 class="section-title">Initiate Trade Inquiry</h2>
-          <p style="color:var(--text-sec); font-size:1.05rem; line-height:1.7; margin-bottom:2.5rem;">
+          <p style="color:var(--text-body); font-size:1.05rem; line-height:1.7; margin-bottom:2.5rem;">
             Direct corporate channel to <strong>Amit Vora</strong> at Barsana International LLC, Sharjah Media City. Submit official RFQ / LOI parameters for immediate volume allocation and freight estimates.
           </p>
 
-          <div style="font-family:var(--font-mono); font-size:0.8rem; display:grid; gap:1.2rem; color:var(--text-sec);">
+          <div style="font-family:var(--font-mono); font-size:0.84rem; display:grid; gap:1.4rem; color:var(--text-body);">
             <div>
-              <span style="color:var(--ice-muted); display:block; font-size:0.68rem; letter-spacing:0.14em;">JURISDICTION</span>
-              <span style="color:#ffffff;">Sharjah Media City (Shams), Sharjah, UAE</span>
+              <span style="color:var(--text-muted); display:block; font-size:0.7rem; letter-spacing:0.14em;">JURISDICTION</span>
+              <span style="color:var(--text-main); font-weight:600;">Sharjah Media City (Shams), Sharjah, UAE</span>
             </div>
             <div>
-              <span style="color:var(--ice-muted); display:block; font-size:0.68rem; letter-spacing:0.14em;">COMMODITY EMAIL</span>
-              <a href="mailto:trade@barsanaintl.com" style="color:var(--ice-glow); text-decoration:none;">trade@barsanaintl.com</a>
+              <span style="color:var(--text-muted); display:block; font-size:0.7rem; letter-spacing:0.14em;">COMMODITY EMAIL</span>
+              <a href="mailto:trade@barsanaintl.com" style="color:var(--azure-core); text-decoration:none; font-weight:600;">trade@barsanaintl.com</a>
             </div>
             <div>
-              <span style="color:var(--ice-muted); display:block; font-size:0.68rem; letter-spacing:0.14em;">INCOTERMS® 2020</span>
-              <span style="color:#ffffff;">FOB (Load Port) • CFR • CIF (Destination) • DAP</span>
+              <span style="color:var(--text-muted); display:block; font-size:0.7rem; letter-spacing:0.14em;">INCOTERMS® 2020</span>
+              <span style="color:var(--text-main); font-weight:600;">FOB (Load Port) • CFR • CIF (Destination) • DAP</span>
             </div>
           </div>
         </div>
@@ -832,7 +819,7 @@
             <textarea id="notesInput" rows="3" placeholder="Specify purity requirements, shipment schedule, DLC / SBLC preference..."></textarea>
           </div>
 
-          <button type="submit" class="nav-cta" style="width:100%; justify-content:center; padding:1rem; cursor:pointer; font-size:0.86rem; border:none; margin-top:0.5rem;">
+          <button type="submit" class="nav-cta" style="width:100%; justify-content:center; padding:1.05rem; cursor:pointer; font-size:0.9rem; border:none; margin-top:0.5rem;">
             Transmit Official Inquiry to trade@barsanaintl.com →
           </button>
         </form>
@@ -840,18 +827,18 @@
     </div>
   </section>
 
-  <!-- Monolithic Minimal Footer -->
+  <!-- Clean Editorial Footer -->
   <footer class="site-footer">
     <div class="container">
       <div class="footer-top">
         <div>
-          <span style="color:var(--ice-glow); letter-spacing:0.18em;">BARSANA INTERNATIONAL LLC</span>
-          <p style="margin-top:0.5rem; color:var(--text-sec);">Sharjah Media City (Shams), UAE • trade@barsanaintl.com</p>
+          <span style="color:var(--azure-core); font-weight:700; letter-spacing:0.18em;">BARSANA INTERNATIONAL LLC</span>
+          <p style="margin-top:0.5rem; color:var(--text-body);">Sharjah Media City (Shams), UAE • trade@barsanaintl.com</p>
         </div>
         <div style="display:flex; gap:2.5rem;">
-          <a href="https://www.linkedin.com/company/barsana-international" target="_blank" rel="noopener" style="color:var(--text-sec); text-decoration:none;">LinkedIn</a>
-          <a href="https://www.instagram.com/barsanaintl/" target="_blank" rel="noopener" style="color:var(--text-sec); text-decoration:none;">Instagram</a>
-          <a href="mailto:trade@barsanaintl.com" style="color:var(--ice-glow); text-decoration:none;">Trade Desk</a>
+          <a href="https://www.linkedin.com/company/barsana-international" target="_blank" rel="noopener" style="color:var(--text-body); text-decoration:none; font-weight:600;">LinkedIn</a>
+          <a href="https://www.instagram.com/barsanaintl/" target="_blank" rel="noopener" style="color:var(--text-body); text-decoration:none; font-weight:600;">Instagram</a>
+          <a href="mailto:trade@barsanaintl.com" style="color:var(--azure-core); text-decoration:none; font-weight:600;">Trade Desk</a>
         </div>
       </div>
       <div class="footer-huge-name">BARSANA</div>
@@ -863,14 +850,6 @@
   </footer>
 
   <script>
-    // Cursor Ambient Spotlight
-    const light = document.getElementById('ambient-light');
-    window.addEventListener('mousemove', (e) => {
-      light.style.left = e.clientX + 'px';
-      light.style.top = e.clientY + 'px';
-    });
-
-    // Hover Image Preview
     const previewModal = document.getElementById('hoverPreview');
     const previewImg = document.getElementById('previewImg');
     
